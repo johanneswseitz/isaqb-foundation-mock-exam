@@ -4,6 +4,7 @@ scripts/flow/*/.flowconfig
 .flowconfig
 *~
 *.pyc
+__pycache__/
 .grunt
 _SpecRunner.html
 __benchmarks__
@@ -24,3 +25,4 @@ chrome-user-data
 *.swp
 *.swo
 
+scripts/examination-foundation-main/
