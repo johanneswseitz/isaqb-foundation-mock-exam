@@ -1,0 +1,1297 @@
+[
+    {
+        "id": "question-02.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche DREI der folgenden Aspekte werden durch den Begriff \u201eSoftwarearchitektur\u201c abgedeckt?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Komponenten"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Querschnittskonzepte"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "(interne und externe) Schnittstellen"
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Programmierkonventionen (_coding conventions_)"
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Hardware-Sizing"
+            }
+        ]
+    },
+    {
+        "id": "question-03.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden sieben Antworten die **vier** Antworten aus, die am besten passen.",
+        "points": "2",
+        "question": "Welche VIER der folgenden Aussagen zu (Querschnitts-) Konzepten sind am zutreffendsten?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Durch die einheitliche Verwendung von Konzepten wird die Kopplung zwischen Bausteinen verringert."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Durch die Definition von geeigneten Konzepten wird die Mustertreue der Architektur sichergestellt."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Eine einheitliche Ausnahmebehandlung (_Exception Handling_) kann man gut erreichen, indem die"
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "F\u00fcr jedes Qualit\u00e4tsziel sollte es ein explizit dokumentiertes Konzept geben."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Konzepte sind ein Mittel zur Erh\u00f6hung der Konsistenz."
+            },
+            {
+                "option": "f",
+                "correct": true,
+                "text": "Ein Konzept kann Einschr\u00e4nkungen f\u00fcr die Umsetzung vieler Bausteine definieren."
+            },
+            {
+                "option": "g",
+                "correct": true,
+                "text": "Ein Konzept kann durch einen einzigen Baustein umgesetzt werden."
+            }
+        ]
+    },
+    {
+        "id": "question-04.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "1",
+        "question": "Bei Ihrem Projekt arbeiten drei Architekt:innen und sieben Entwickler:innen an der Dokumentation der Softwarearchitektur. Welche Methoden eignen sich zur Gew\u00e4hrleistung einer konsistenten und zweckm\u00e4\u00dfigen Dokumentation und welche nicht?",
+        "first_choice": "Geeignet",
+        "second_choice": "Nicht geeignet",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Die/der leitende Architekt:in koordiniert die Erstellung der Dokumentation."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "F\u00fcr die Dokumentation werden identische Vorlagen verwendet."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Alle Teile der Dokumentation werden automatisch aus dem Quellcode extrahiert."
+            }
+        ]
+    },
+    {
+        "id": "question-05.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden acht Antworten die **vier** Antworten aus, die am besten passen.",
+        "points": "2",
+        "question": "Welche VIER der folgenden Techniken sind am besten zur Darstellung von Abl\u00e4ufen oder Laufzeitverhalten geeignet?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Flussdiagramme"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Aktivit\u00e4tsdiagramme"
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Darstellung von Screenflows (Abfolge von Benutzerinteraktionen)"
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Sequenzdiagramm"
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Lineares Venn-Diagramm"
+            },
+            {
+                "option": "f",
+                "correct": true,
+                "text": "Nummerierte Liste aufeinanderfolgender Schritte"
+            },
+            {
+                "option": "g",
+                "correct": false,
+                "text": "Tabellarische Schnittstellenbeschreibung"
+            },
+            {
+                "option": "h",
+                "correct": false,
+                "text": "Klassendiagramme"
+            }
+        ]
+    },
+    {
+        "id": "question-06.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche DREI der folgenden Grunds\u00e4tze gelten f\u00fcr das Testen?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Im Allgemeinen ist es nicht m\u00f6glich, s\u00e4mtliche Fehler eines Systems zu finden."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Bei Komponenten mit vielen bekannten vorherigen Fehlern sind die Chancen f\u00fcr zus\u00e4tzliche Fehler hoch."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Durch ausreichendes Testen kann aufgezeigt werden, dass ein Programm fehlerfrei ist."
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Durch Testen kann nur die Existenz von Fehlern aufgezeigt werden, nicht jedoch ihre Abwesenheit."
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Die funktionale Programmierung erlaubt keine automatisierten Tests."
+            }
+        ]
+    },
+    {
+        "id": "question-07.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Welche der folgenden Aussagen zum Entwurfsprinzip \"Information Hiding\" sind richtig und welche falsch?",
+        "first_choice": "Richtig",
+        "second_choice": "Falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Durch die Befolgung des Prinzips \"Information Hiding\" wird die Flexibilit\u00e4t f\u00fcr \u00c4nderungen erh\u00f6ht."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Beim Information Hiding werden absichtlich Informationen vor Aufrufern oder Konsumenten des Bausteins verborgen."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Information Hiding erschwert das Bottom-Up Vorgehen."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Information Hiding ist abgeleitet vom Ansatz der inkrementellen Verfeinerung entlang des Kontrollflusses."
+            }
+        ]
+    },
+    {
+        "id": "question-08.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Was sind die ZWEI wichtigsten Ziele von Softwarearchitektur?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Verbesserung der Genauigkeit von Mustern in Struktur und Implementierung."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Erreichung der Qualit\u00e4tsanforderungen auf nachvollziehbare Weise."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Erm\u00f6glichung von kosteneffizienten Integrations- und Abnahmetests des Systems."
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Erm\u00f6glichung eines grundlegenden Verst\u00e4ndnisses der Strukturen und Konzepte f\u00fcr das Entwicklungsteam und andere Beteiligte."
+            }
+        ]
+    },
+    {
+        "id": "question-09.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "1",
+        "question": "Stellen Sie sich vor, Sie sind Softwarearchitekt:in f\u00fcr eine gro\u00dfe und verteilte Gesch\u00e4ftsanwendung im Banken- oder Versicherungsbereich.\nWelche der folgenden Aussagen sind f\u00fcr diese Situation richtig und welche falsch?",
+        "first_choice": "Richtig",
+        "second_choice": "Falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Ihre Architektur sollte so aufgebaut sein, dass h\u00e4ufig vorkommende \u00c4nderungen an den entsprechenden Gesch\u00e4ftsprozessen ohne umfangreiche Umstrukturierungen der Softwarearchitektur m\u00f6glich sind."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Erforderliche Produktqualit\u00e4ten sollten Ihre architektonischen Entscheidungen leiten."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Die Softwarearchitektur kann v\u00f6llig unabh\u00e4ngig von Hardware und Infrastruktur entworfen werden."
+            }
+        ]
+    },
+    {
+        "id": "question-10.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Was sind Ihre DREI wichtigsten Verantwortlichkeiten als Softwarearchitekt:in in Bezug auf Anforderungen?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Unterst\u00fctzung der Fachexpert:innen dabei, Qualit\u00e4tsanforderungen konkret und explizit zu formulieren."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Hilfe bei der Identifizierung von neuen Gesch\u00e4ftsm\u00f6glichkeiten anhand Ihres technischen Know-hows."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Ablehnung von Anforderungen, die technische Risiken enthalten."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Umformulierung aller Gesch\u00e4ftsanforderungen, so dass sie f\u00fcr Ihr Entwicklungsteam verst\u00e4ndlich sind."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "\u00dcberpr\u00fcfung der Anforderungen auf technische Machbarkeit."
+            }
+        ]
+    },
+    {
+        "id": "question-11.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Sie sind als Architekt:in daf\u00fcr zust\u00e4ndig, ein Altsystem entsprechend den laufenden Betriebsanforderungen am Laufen zu halten.\nWas sind Ihre DREI wichtigsten Aufgaben?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Verhandlung des Wartungsbudgets f\u00fcr Ihr Team"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Sicherstellung einer aktuellen Dokumentation des ausgelieferten Systems"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Analyse der Auswirkungen von neuen Anforderungen auf das aktuelle System"
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Ermunterung der Teammitglieder, neue Programmiersprachen zu lernen"
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Ihren Vorgesetzten technologische Updates zus\u00e4tzlich zu den Gesch\u00e4ftsanforderungen vorschlagen"
+            }
+        ]
+    },
+    {
+        "id": "question-12.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Welche der folgenden Aussagen zu Architekturentscheidungen sind wahr, welche falsch?",
+        "first_choice": "Wahr",
+        "second_choice": "Falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Architekturentscheidungen m\u00fcssen nie aufgeschrieben werden, da diese bereits dem Entwicklungsteam bekannt sind."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Architecture Decision Records helfen dabei, Entscheidungen in ihrem Kontext nachzuvollziehen."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Nachdem man sich f\u00fcr ein zentrales Framework (z.B. Persistenzframework) entschieden hat, darf diese Entscheidung nicht mehr ge\u00e4ndert werden."
+            },
+            {
+                "option": "d",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Qualit\u00e4tsanforderungen helfen ma\u00dfgeblich bei Architekturentscheidungen."
+            }
+        ]
+    },
+    {
+        "id": "question-13.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Geben Sie f\u00fcr jede der folgenden Aussagen an, ob sie richtig oder falsch ist.",
+        "first_choice": "richtig",
+        "second_choice": "falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Jede Iteration eines agilen Entwicklungsvorgehens kann Auswirkungen auf architektonische Grundsatzentscheidungen haben."
+            },
+            {
+                "option": "b",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Der Gesamtaufwand f\u00fcr Architekturarbeit ist bei iterativen Projekten wesentlich h\u00f6her als bei Wasserfall-Projekten."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Agile Projekte ben\u00f6tigen keine Architekturdokumente, da das Entwicklungsteam in t\u00e4glichen Standup-Meetings Entscheidungen kommuniziert."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Wenn Ihr System aus einer Reihe von Microservices besteht, ist kein zentrales Architekturdokument erforderlich, da jeder Service seine Technologien ausw\u00e4hlen kann."
+            }
+        ]
+    },
+    {
+        "id": "question-14.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Geben Sie an, welche der folgenden Aussagen zu Projektzielen und Architekturzielen richtig und welche falsch sind.",
+        "first_choice": "Richtig",
+        "second_choice": "Falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Projektziele k\u00f6nnen funktionale Anforderungen sowie Qualit\u00e4tsanforderungen umfassen."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Architekturziele leiten sich von den Qualit\u00e4tsanforderungen f\u00fcr das System oder Produkt ab."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Stakeholder aus dem Business sollten sich auf Gesch\u00e4ftsziele konzentrieren und sich nicht mit Architekturzielen auseinandersetzen."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Zur Vermeidung von Konflikten sollten Gesch\u00e4fts- und Architekturziele einander nicht \u00fcberlappen."
+            }
+        ]
+    },
+    {
+        "id": "question-15.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Was bedeutet die Regel \u201eexplizit, nicht implizit\u201c f\u00fcr die Architekturarbeit? W\u00e4hlen Sie die ZWEI passendsten Antworten aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Architekt:innen sollten rekursive Strukturen vermeiden und durch explizite Schleifen ersetzen."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Architekt:innen sollten die Annahmen, die zu Entscheidungen f\u00fchren, explizit machen."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Architekt:innen sollten explizit auf Erl\u00e4uterungen (d.h. Kommentare) in nat\u00fcrlicher Sprache f\u00fcr jeden Baustein bestehen."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Architekt:innen sollten explizit auf schriftlichen oder zumindest m\u00fcndlichen Begr\u00fcndungen f\u00fcr Aufwandsch\u00e4tzungen der Entwicklung von ihrem Team bestehen."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Architekt:innen sollten die Voraussetzungen f\u00fcr ihre Entscheidungen explizit darlegen."
+            }
+        ]
+    },
+    {
+        "id": "question-16.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Kreuzen Sie die DREI zutreffendsten Beispiele f\u00fcr typische Kategorien von Softwaresystemen an.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Batch-System"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Interaktives Online-System"
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Linn\u00e9s-System."
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Eingebettetes Echtzeitsystem."
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Integrationstestsystem"
+            }
+        ]
+    },
+    {
+        "id": "question-17.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Es gibt zahlreiche Ans\u00e4tze, die zu einer Softwarearchitektur f\u00fchren.\nWelche DREI der folgenden Ans\u00e4tze kommen in der Praxis am h\u00e4ufigsten vor?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "User-Interface Driven Design"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Domain-driven Design"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Sichtenbasierte Architekturentwicklung"
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Bottom-up Design"
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Mehrheitsentscheid"
+            }
+        ]
+    },
+    {
+        "id": "question-18.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden sechs Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Diverse Architekturentwicklungsmethoden schlagen einen sichtenbasierten Ansatz vor.\nWelche DREI der folgenden Sichten werden am h\u00e4ufigsten verwendet?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Physische Datenbanksicht"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Kontextsicht"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Bausteinsicht oder Komponentensicht"
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Testbasierte Sicht"
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Konfigurationssicht"
+            },
+            {
+                "option": "f",
+                "correct": true,
+                "text": "Laufzeitsicht"
+            }
+        ]
+    },
+    {
+        "id": "question-19.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Sie dokumentieren einen Baustein einer Softwarearchitektur.\nWelche ZWEI Informationen sollten in seiner Black-Box-Beschreibung enthalten sein?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "\u00d6ffentliche Schnittstellen."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Verantwortlichkeiten des Bausteins."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Interne Struktur des Bausteins."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Spezifikation von Implementierungsdetails."
+            }
+        ]
+    },
+    {
+        "id": "question-20.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche Voraussetzungen m\u00fcssen vor der Entwicklung einer Softwarearchitektur erf\u00fcllt sein?\nW\u00e4hlen Sie die ZWEI passendsten Antworten aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Die Anforderungsspezifikation f\u00fcr das System ist vollst\u00e4ndig, detailliert und konsistent."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Die wichtigsten Qualit\u00e4tsanforderungen an das System sind bekannt."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Die organisatorischen Randbedingungen sind bekannt."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Die Programmiersprache wurde ausgew\u00e4hlt."
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Die Hardware f\u00fcr das Entwicklungsteam ist verf\u00fcgbar."
+            }
+        ]
+    },
+    {
+        "id": "question-21.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **drei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche Faktoren k\u00f6nnen den Entwurf einer Softwarearchitektur beeinflussen?\nW\u00e4hlen Sie die DREI passendsten Antworten aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Politische."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Organisatorische."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Technische."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Virtuelle."
+            }
+        ]
+    },
+    {
+        "id": "question-22.adoc",
+        "type": "A-Frage",
+        "instruction": "Bitte kreuzen Sie die richtige Antwort an.",
+        "points": "1",
+        "question": "Welche der folgenden Eigenschaften l\u00e4sst sich am ehesten durch eine Schichtenarchitektur verbessern?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Laufzeiteffizienz (Performance)."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Flexibilit\u00e4t bei der Modifizierung oder \u00c4nderung des Systems."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Flexibilit\u00e4t bei der Laufzeit (Konfigurierbarkeit)."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Nichtabstreitbarkeit."
+            }
+        ]
+    },
+    {
+        "id": "question-23.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "F\u00fcr welche Entwurfsprobleme bietet das Pipes & Filter Pattern L\u00f6sungsans\u00e4tze?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Verwaltung von globalem Anwendungszustand"
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Strukturierung von IT-Systemen die Datenstr\u00f6me verarbeiten"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Entkopplung von Verarbeitungsschritten"
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Entkopplung von zeitlichen Abh\u00e4ngigkeiten"
+            }
+        ]
+    },
+    {
+        "id": "question-24.adoc",
+        "type": "A-Frage",
+        "instruction": "Bitte kreuzen Sie die richtige Antwort an.",
+        "points": "1",
+        "question": "Welche Ziele versuchen Sie mit dem Dependency-Inversion-Prinzip zu erreichen?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Gro\u00dfe Bausteine sollen nicht von kleinen Bausteinen abh\u00e4ngen."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Komponenten sollen in der Lage sein, abh\u00e4ngige Komponenten leichter zu erstellen."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Bausteine sollen nur \u00fcber Abstraktionen voneinander abh\u00e4ngen."
+            }
+        ]
+    },
+    {
+        "id": "question-25.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Was sind die Eigenschaften von enger (hoher) bzw. loser (niedriger) Kopplung?",
+        "first_choice": "enge Kopplung",
+        "second_choice": "lose Kopplung",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Bausteine k\u00f6nnen abh\u00e4ngige Bausteine direkt, d.h. ohne Umwege \u00fcber Schnittstellen oder Abstraktionen, aufrufen."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Bausteine verwenden gemeinsame komplexe Datenstrukturen."
+            },
+            {
+                "option": "c",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Bausteine verwenden eine gemeinsame Tabelle (f\u00fcr Schreib- und Leseoperationen) innerhalb einer relationalen Datenbank."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Beim Baustein-Design haben Sie das Dependency-Inversion-Prinzip konsequent umgesetzt."
+            }
+        ]
+    },
+    {
+        "id": "question-26.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche ZWEI Aussagen zum \u201eDon\u2019t repeat yourself\u201d-Prinzip (DRY) treffen am ehesten zu?\nAnders gesagt: Was k\u00f6nnte passieren, wenn Teile des Quellcodes oder der Konfiguration im System mehrfach vorhanden sind?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "DRY verringert die Sicherheit."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Die strenge Einhaltung von DRY k\u00f6nnte zu h\u00f6herer Kopplung f\u00fchren."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Die Komponenten des Systems mit redundantem Code k\u00f6nnen unabh\u00e4ngig voneinander verbessert werden."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Die Einhaltung von DRY f\u00fchrt zu einer Verringerung der Angriffsvektoren in der IT-Sicherheit."
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Die Anwendung der Schichtenmuster erm\u00f6glicht eine konsistente Anwendung des DRY-Prinzips."
+            }
+        ]
+    },
+    {
+        "id": "question-27.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Sie k\u00f6nnen Aspekte Ihrer Softwarearchitektur m\u00fcndlich und/oder schriftlich kommunizieren.\nIn welchem Zusammenhang stehen diese M\u00f6glichkeiten zueinander?\nGeben Sie f\u00fcr jede der folgenden Aussagen an, ob sie richtig oder falsch ist.",
+        "first_choice": "Richtig",
+        "second_choice": "Falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "M\u00fcndliche Kommunikation sollte schriftliche Dokumentation erg\u00e4nzen."
+            },
+            {
+                "option": "b",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Feedback zu Architekturentscheidungen sollte zur Sicherstellung der Nachverfolgbarkeit grunds\u00e4tzlich schriftlich erfolgen."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Schriftliche Dokumentation sollte immer m\u00fcndlicher Kommunikation vorausgehen."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Architekt:innen sollten sich eine Variante (m\u00fcndlich oder schriftlich) aussuchen und w\u00e4hrend der gesamten Entwicklung dabei bleiben."
+            }
+        ]
+    },
+    {
+        "id": "question-28.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Welche der folgenden Aussagen zu Notationen f\u00fcr Architektursichten sind richtig und welche falsch?",
+        "first_choice": "wahr",
+        "second_choice": "falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Business Process Model & Notation (BPMN) sollte nur von Business-Analysten und nicht zur Architekturdokumentation verwendet werden."
+            },
+            {
+                "option": "b",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "UML-Verteilungsdiagramme sind die einzige M\u00f6glichkeit zur Dokumentation des Mappings der Softwarekomponenten in Bezug auf die Infrastruktur."
+            },
+            {
+                "option": "c",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "UML-Paketdiagramme k\u00f6nnen zum Festhalten der Bausteinsicht der Softwarearchitektur verwendet werden."
+            }
+        ]
+    },
+    {
+        "id": "question-29.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Welche ZWEI Architektursichten haben die beste praktische Anwendung f\u00fcr die Entwicklung von Softwarearchitekturen?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Pattern-Sicht."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Beobachtersicht (Observer-View)."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Bausteinsicht (Komponentensicht)."
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "Verteilungssicht."
+            }
+        ]
+    },
+    {
+        "id": "question-30.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "In der Kontextsicht k\u00f6nnen Sie einen gesch\u00e4ftlichen Kontext (\u201ebusiness context\u201c) und einen technischen Kontext verwenden.\nW\u00e4hlen Sie die ZWEI am besten passenden Antworten f\u00fcr den technischen Kontext aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Der technische Kontext enth\u00e4lt die physischen \u00dcbertragungskan\u00e4le zwischen Ihrem System und der Umgebung."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Der technische Kontext enth\u00e4lt die gesamte Infrastruktur, \u00fcber die die Komponenten Ihres Systems verteilt werden."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Der technische Kontext sollte die Hardware-Preisliste oder die Preisgestaltung von Cloud-Diensten, die als Infrastruktur f\u00fcr Ihre Architektur verwendet werden, enthalten."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Der technische Kontext enth\u00e4lt Informationen zur gew\u00e4hlten Programmiersprache sowie allen zur Implementierung Ihrer Softwarearchitektur verwendeten Frameworks."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Der technische Kontext enth\u00e4lt gegebenenfalls andere Elemente als der Gesch\u00e4ftskontext (\"business context\")."
+            }
+        ]
+    },
+    {
+        "id": "question-31.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden vier Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Die Dokumentation der Softwarearchitektur sollte Beschreibungen der Querschnittskonzepte enthalten.\nW\u00e4hlen Sie die ZWEI besten Gr\u00fcnde, warum die Dokumentation von Querschnittskonzepten sinnvoll ist.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Querschnittskonzepte sollten sich auf die Fachdom\u00e4ne konzentrieren und frei von technischen Informationen sein."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Aspekte oder Konzepte, die in mehreren Teilen Ihrer Softwarearchitektur verwendet werden, sollten auf nicht redundante Weise beschrieben werden."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Querschnittskonzepte k\u00f6nnen in weiteren Produkten innerhalb der gleichen Organisation  erneut verwendet werden."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Querschnittskonzepte sollten von Spezialist:innen implementiert werden. Daher ist eine separate Dokumentation hilfreich."
+            }
+        ]
+    },
+    {
+        "id": "question-32.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Was sind Richtlinien f\u00fcr ein gutes Schnittstellen-Design?\nKreuzen Sie an, welche der folgenden Aussagen richtig und welche falsch sind.",
+        "first_choice": "richtig",
+        "second_choice": "falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Die Verwendung der Schnittstellen sollte einfach zu erlernen sein."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Es soll m\u00f6glich sein, angemessen verst\u00e4ndlichen Client-Code f\u00fcr diese Schnittstelle zu schreiben."
+            },
+            {
+                "option": "c",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Eine Schnittstelle soll Zugriff auf eine umfassende Menge von Implementierungsdetails erm\u00f6glichen."
+            },
+            {
+                "option": "d",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Schnittstellenspezifikationen sollten funktionale und nichtfunktionale Aspekte enthalten."
+            },
+            {
+                "option": "e",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Lokale und entfernte (\"remote\") Aufrufe einer Schnittstelle sollen sich in allen Belangen identisch verhalten."
+            }
+        ]
+    },
+    {
+        "id": "question-33.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Eine Definition lautet: \u201eSoftwarearchitektur ist die Summe aller w\u00e4hrend der Entwicklung gef\u00e4llten Entscheidungen\u201c.\nKreuzen Sie an, welche der folgenden Aussagen zu Architektur- /Designentscheidungen richtig und welche falsch sind.",
+        "first_choice": "richtig",
+        "second_choice": "falsch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Architektonische Entscheidungen k\u00f6nnen sich in der Struktur der Bausteine oder Komponenten niederschlagen."
+            },
+            {
+                "option": "b",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Softwarearchitekt:innen sollten alle Entwurfsentscheidungen schriftlich begr\u00fcnden."
+            },
+            {
+                "option": "c",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Architektonische Entscheidungen k\u00f6nnen untereinander Wechselwirkungen haben."
+            },
+            {
+                "option": "d",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Kompromisse zwischen zueinander in Konflikt stehenden Qualit\u00e4tsanforderungen sollten explizite Entscheidungen sein."
+            }
+        ]
+    },
+    {
+        "id": "question-34.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Welche der folgenden Aussagen sind typische Gr\u00fcnde zur Einf\u00fchrung einer Architekturdokumentation und welche nicht?",
+        "first_choice": "typisch",
+        "second_choice": "nicht typisch",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Unterst\u00fctzung des Onboardings neuer Entwickler:innen."
+            },
+            {
+                "option": "b",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Unterst\u00fctzung der Testautomatisierung des Systems."
+            },
+            {
+                "option": "c",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Unterst\u00fctzung der Arbeit von verteilten Teams."
+            },
+            {
+                "option": "d",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Unterst\u00fctzung von sp\u00e4teren Verbesserungen des Systems."
+            },
+            {
+                "option": "e",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Einhaltung regulatorischer Vorgaben."
+            },
+            {
+                "option": "f",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Sicherstellung der gleichm\u00e4\u00dfigen Auslastung des Teams."
+            }
+        ]
+    },
+    {
+        "id": "question-35.adoc",
+        "type": "K-Frage",
+        "instruction": "Bitte ordnen Sie jede Antwort einer Kategorie zu.",
+        "points": "2",
+        "question": "Welche der folgenden Eigenschaftspaare stehen \u00fcblicherweise miteinander in Konflikt und welche nicht?",
+        "first_choice": "Konflikt",
+        "second_choice": "Kein Konflikt",
+        "answers": [
+            {
+                "option": "a",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Verst\u00e4ndlichkeit \u2013 Lesbarkeit."
+            },
+            {
+                "option": "b",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Benutzerfreundlichkeit \u2013 Sicherheit."
+            },
+            {
+                "option": "c",
+                "first_correct": true,
+                "second_correct": false,
+                "text": "Laufzeitkonfigurierbarkeit \u2013 Robustheit."
+            },
+            {
+                "option": "d",
+                "first_correct": false,
+                "second_correct": true,
+                "text": "Sicherheit \u2013 Funktionale Korrektheit."
+            }
+        ]
+    },
+    {
+        "id": "question-36.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "ISO 25010 enth\u00e4lt allgemeine Qualit\u00e4tseigenschaften f\u00fcr Softwaresysteme.\nWie k\u00f6nnen Qualit\u00e4tsanforderungen zu diesen Eigenschaften konkretisiert werden?\nW\u00e4hlen Sie die ZWEI besten Alternativen aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Durch Entwickeln von UI-Prototypen."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Durch Definieren expliziter Schnittstellen."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Durch Erstellen, verfassen oder diskutieren von Szenarien."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Durch Erstellen automatisierter Tests."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Durch Erstellen eines Qualit\u00e4tsbaums."
+            }
+        ]
+    },
+    {
+        "id": "question-37.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden sechs Antworten die **vier** Antworten aus, die am besten passen.",
+        "points": "2",
+        "question": "Welche vier der folgenden Punkte sind am besten geeignet, die Analyse der Erreichung der Qualit\u00e4tsanforderungen (_qualitative_ Analyse) Ihrer Softwarearchitektur zu unterst\u00fctzen?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Quantitative Abh\u00e4ngigkeitsanalyse."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "Architekturmodelle."
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Qualit\u00e4tsszenarien."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Teamgr\u00f6\u00dfe."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Logdateien."
+            },
+            {
+                "option": "f",
+                "correct": false,
+                "text": "Organigramm."
+            }
+        ]
+    },
+    {
+        "id": "question-38.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **zwei** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Sie versuchen, Ihre Architektur qualitativ zu analysieren.\nWas sind die ZWEI zutreffendsten Anzeichen f\u00fcr architektonische Problembereiche?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Hohe Kopplung der Komponenten."
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Namen \u00f6ffentlicher Methoden geben nicht deren Zweck wieder."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Fehlende Kommentare."
+            },
+            {
+                "option": "d",
+                "correct": true,
+                "text": "H\u00e4ufung von Fehlern in bestimmten Bausteinen des Systems."
+            },
+            {
+                "option": "e",
+                "correct": false,
+                "text": "Anzahl der Testf\u00e4lle pro Komponente."
+            }
+        ]
+    },
+    {
+        "id": "question-39.adoc",
+        "type": "P-Frage",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die *drei*** Antworten aus, die am besten passen.",
+        "points": "1",
+        "question": "Sie versuchen, ihre Architektur quantitativ zu untersuchen.\nWelche der folgenden Gr\u00f6\u00dfen k\u00f6nnen Sie f\u00fcr Ihre Softwarearchitektur zuverl\u00e4ssig messen?\nW\u00e4hlen Sie die DREI am besten passenden Antworten aus.",
+        "answers": [
+            {
+                "option": "a",
+                "correct": true,
+                "text": "Gr\u00f6\u00dfe der Bausteine (z.{nbsp}B. Lines-of-Code)."
+            },
+            {
+                "option": "b",
+                "correct": true,
+                "text": "\u00c4nderungsrate des Quellcodes der Komponenten."
+            },
+            {
+                "option": "c",
+                "correct": false,
+                "text": "Koh\u00e4sion der Architekturkomponenten."
+            },
+            {
+                "option": "d",
+                "correct": false,
+                "text": "Sicherheitsstufe einer Komponente."
+            },
+            {
+                "option": "e",
+                "correct": true,
+                "text": "Anzahl der Personen, die zu einer bestimmten Komponente beigetragen haben."
+            }
+        ]
+    }
+]
