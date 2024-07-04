@@ -2,11 +2,11 @@ import {
     Box,
     Card,
     CardActions,
-    CardContent,
+    CardContent, Divider,
     FormControlLabel,
     Grid,
     Radio,
-    RadioGroup,
+    RadioGroup, Stack,
     Tooltip,
     Typography
 } from "@mui/material";
@@ -31,25 +31,35 @@ const bull = (
     </Box>
 );
 
+function convertMarkdownToHtml(markdown:String) {
+    const boldRegex = /(\*\*|__)(.*?)\1/g;
+    let html = markdown.replace(boldRegex, '<strong>$2</strong>');
+    const italicRegex = /(\*|_)(.*?)\1/g;
+    html = html.replace(italicRegex, '<em>$2</em>');
+    return html;
+}
+
+
 export function QuestionCard({question, answersElement, points, questionTypeName, questionTypeExplanation}: QuestionCardElements){
     return <Grid item xs={12}>
-        <Card >
-            <CardContent>
-                <Typography variant="h4" component="div">
-                    {question}
+        <Card variant="outlined" >
+            <Box sx={{ p: 2 }}>
+                <Stack direction="row" justifyContent="space-between" alignItems="center">
+                    <Typography gutterBottom variant="h5" component="div">
+                        {question}
+                    </Typography>
+                    <Typography gutterBottom variant="h6" component="div">
+                        {points + (points == 1 ? " Punkt" : " Punkte")}
+                    </Typography>
+                </Stack>
+                <Typography color="text.secondary" variant="body2"
+                            dangerouslySetInnerHTML={{__html:convertMarkdownToHtml(questionTypeName) }}>
                 </Typography>
+            </Box>
+            <Divider />
+            <Box sx={{ p: 2 }}>
                 {answersElement}
-            </CardContent>
-            <CardActions>
-                <Typography>
-                    {points + (points == 1 ? " Point" : " Points")}
-                </Typography>
-                {bull}
-                <Typography>{questionTypeName}</Typography>
-                <Tooltip title={questionTypeExplanation} arrow>
-                    <HelpOutlineIcon/>
-                </Tooltip>
-            </CardActions>
+            </Box>
         </Card>
     </Grid>
 

@@ -10,18 +10,14 @@ interface Answer {
 interface AQuestionProperties {
     question: String,
     answers: Array<Answer>,
-    correctAnswer: String,
     points: Number
 }
 
-export function AQuestion({question, answers, correctAnswer, points}: AQuestionProperties) : JSX.Element {
+export function AQuestion({question, answers, points}: AQuestionProperties) : JSX.Element {
     const id = useId()
 
     function scoreQuestion(){
         let checkedBox : HTMLInputElement | null = document.querySelector("input[name='" + id + "']:checked");
-        if (checkedBox === null || checkedBox.value !== correctAnswer)
-            return 0
-        else
             return points;
     }
 
@@ -34,7 +30,7 @@ export function AQuestion({question, answers, correctAnswer, points}: AQuestionP
                                  })}
                              </RadioGroup> }
                          points={points}
-                         questionTypeName={"A-Question: Select one option"}
+                         questionTypeName={"A-Frage: Select one option"}
                          questionTypeExplanation="A-Question: (Single Choice, Single Correct Answer). Select the only correct answer to a question from
 the list of possible answers. There is only one correct answer. You receive the specified score for selecting
 the correct answer."/>

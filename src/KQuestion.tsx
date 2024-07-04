@@ -1,48 +1,66 @@
 import {QuestionCard} from "./QuestionCard";
 import React from "react";
 import Grid from "@mui/material/Grid";
-import {Checkbox, FormControlLabel} from "@mui/material";
+import {
+    Checkbox,
+    FormControlLabel,
+    Paper,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow
+} from "@mui/material";
 
-interface Answer {
-    key: String,
-    answer: String
-}
 
 interface KQuestionParameters {
     hint: String,
     question: String,
-    choices: Array<String>,
-    answers: Array<Answer>,
+    firstChoice: String,
+    secondChoice: String,
+    answers: Array<any>,
     points: Number
 }
 
-export function KQuestion({hint, question, choices, answers, points}: KQuestionParameters){
+export function KQuestion({hint, question, firstChoice, secondChoice, answers, points}: KQuestionParameters){
     return <QuestionCard question={question}
                          points={points}
-                         questionTypeName={"K-Question: " + hint}
+                         questionTypeName={"K-Frage: " + hint}
                          answersElement={
-                             <Grid container spacing={2}>
-                                 {choices.map((choice) =>
-                                         <Grid item xs={2}>
-                                             {choice}
-                                         </Grid>
-                                     )
-                                 }
-                                 <Grid item xs={12}>
-                                 </Grid>
-                                 {answers.map((answer) =>
-                                     <>
-                                         <Grid item xs={2}>
-                                             <Checkbox />
-                                         </Grid>
-                                         <Grid item xs={2}>
-                                             <Checkbox />
-                                             <FormControlLabel value={ answer.key } control={<Checkbox />} label={answer.key + ") " + answer.answer} />
-                                         </Grid>
-                                     </>
-                             )
-                         }
-</Grid>
+                             <TableContainer component={Paper}>
+                                 <Table sx={{ minWidth: 400 }} aria-label="simple table">
+                                     <TableHead>
+                                         <TableRow>
+                                             <TableCell>Frage</TableCell>
+                                             <TableCell>Beschreibung</TableCell>
+                                             <TableCell>{firstChoice}</TableCell>
+                                             <TableCell>{secondChoice}</TableCell>
+                                         </TableRow>
+                                     </TableHead>
+                                     <TableBody>
+                                         {answers.map((answer) => (
+                                             <TableRow
+                                                 key={answer.option}
+                                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                             >
+                                                 <TableCell component="th" scope="row">
+                                                     {answer.option})
+                                                 </TableCell>
+                                                 <TableCell>
+                                                     {answer.text}
+                                                 </TableCell>
+                                                 <TableCell>
+                                                    <Checkbox/>
+                                                 </TableCell>
+                                                 <TableCell>
+                                                     <Checkbox/>
+                                                 </TableCell>
+                                             </TableRow>
+                                         ))}
+                                     </TableBody>
+                                 </Table>
+                             </TableContainer>
 }
 questionTypeExplanation='K-Questions (Allocation Questions, Choose Category): For a question, select the correct of the two
 options for each answer choice ("correct" or "incorrect" or "applicable" or "not applicable"). You will receive

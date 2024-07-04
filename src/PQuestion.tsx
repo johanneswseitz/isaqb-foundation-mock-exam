@@ -22,23 +22,22 @@ interface Answer {
 interface PQuestionProperties {
     hint: String,
     question: String,
-    answers: Array<Answer>,
-    correctAnswers: Array<String>,
+    answers: Array<any>,
     points: Number
 }
 
-export function PQuestion({hint, question, answers, correctAnswers, points}: PQuestionProperties) : JSX.Element {
+export function PQuestion({hint, question, answers, points}: PQuestionProperties) : JSX.Element {
     const id = useId();
 
     return <QuestionCard question={question}
                          answersElement={
                              <FormGroup>
                                  {answers.map(answer => (
-                                     <FormControlLabel value={ answer.key } control={<Checkbox />} label={answer.key + ") " + answer.answer} />
+                                     <FormControlLabel value={ answer.option } control={<Checkbox />} label={answer.option + ") " + answer.text} />
                                  ))}
                              </FormGroup> }
                          points={points}
-                         questionTypeName={"P-Question: " + hint}
+                         questionTypeName={"P-Frage: " + hint}
                          questionTypeExplanation="P-Questions (Pick-from-many, Pick Multiple): Select the number of correct answers given in the text from
 the list of possible answers to a question. Select just as many answers as are required in the introductory
 text. You receive 1/n of the total points for each correct answer. For each incorrect cross, 1/n of the points
