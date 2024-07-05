@@ -1,5 +1,6 @@
 {
-  "name": "mock-exam",
+  "name": "isaqb-foundation-mock-exam",
+  "homepage": "https://johanneswseitz.github.io/isaqb-foundation-mock-exam/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

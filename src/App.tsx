@@ -1,18 +1,35 @@
 import React, { useEffect, useState } from "react";
-import logo from './logo.svg';
 import axios from "axios";
 import './App.css';
 import {AQuestion} from "./AQuestion";
-import {Button, Container, CssBaseline, Grid} from "@mui/material";
+import {CssBaseline, Grid} from "@mui/material";
 import {PQuestion} from "./PQuestion";
 import {KQuestion} from "./KQuestion";
+import {createTheme} from "@mui/material/styles";
+
+export const theme = createTheme({
+    palette: {
+        primary: {
+            light: '#BFCFD4',
+            main: '#40707E',
+            dark: '#004153',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#FFE6D9',
+            main: '#FFB58C',
+            dark: '#FF9C66',
+            contrastText: '#000',
+        },
+    },
+});
 
 function App() {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
 
-        axios.get("/questions_de.json").then((res) => {
+        axios.get("./questions_de.json").then((res) => {
 
             setQuestions(res.data);
         });
@@ -44,5 +61,21 @@ function App() {
       </React.Fragment>
   );
 }
+
+function convertMarkdownToHtml(markdown:String) {
+    const boldRegex = /(\*\*|__)(.*?)\1/g;
+    let html = markdown.replace(boldRegex, '<strong>$2</strong>');
+    const italicRegex = /(\*|_)(.*?)\1/g;
+    html = html.replace(italicRegex, '<em>$2</em>');
+    return html;
+}
+
+export const Markdown = ( markdown : any) => {
+    const createMarkup = () => {
+        return { __html: convertMarkdownToHtml(markdown.markdown) };
+    };
+
+    return <div dangerouslySetInnerHTML={createMarkup()} />;
+};
 
 export default App;

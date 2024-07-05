@@ -1,17 +1,13 @@
 import {
     Box,
     Card,
-    CardActions,
-    CardContent, Divider,
-    FormControlLabel,
+    Divider,
     Grid,
-    Radio,
-    RadioGroup, Stack,
-    Tooltip,
+    Stack,
     Typography
 } from "@mui/material";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import React from "react";
+import {Markdown, theme} from "./App";
 
 interface QuestionCardElements {
     question: String,
@@ -20,6 +16,7 @@ interface QuestionCardElements {
     questionTypeName: String,
     questionTypeExplanation:String
 }
+
 
 
 const bull = (
@@ -31,29 +28,21 @@ const bull = (
     </Box>
 );
 
-function convertMarkdownToHtml(markdown:String) {
-    const boldRegex = /(\*\*|__)(.*?)\1/g;
-    let html = markdown.replace(boldRegex, '<strong>$2</strong>');
-    const italicRegex = /(\*|_)(.*?)\1/g;
-    html = html.replace(italicRegex, '<em>$2</em>');
-    return html;
-}
-
 
 export function QuestionCard({question, answersElement, points, questionTypeName, questionTypeExplanation}: QuestionCardElements){
     return <Grid item xs={12}>
         <Card variant="outlined" >
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: 2 }} bgcolor={theme.palette.secondary.light}>
                 <Stack direction="row" justifyContent="space-between" alignItems="center">
                     <Typography gutterBottom variant="h5" component="div">
-                        {question}
+                        <Markdown markdown={question}/>
                     </Typography>
                     <Typography gutterBottom variant="h6" component="div">
                         {points + (points == 1 ? " Punkt" : " Punkte")}
                     </Typography>
                 </Stack>
-                <Typography color="text.secondary" variant="body2"
-                            dangerouslySetInnerHTML={{__html:convertMarkdownToHtml(questionTypeName) }}>
+                <Typography color="text.secondary" variant="body2">
+                    <Markdown markdown={questionTypeName}/>
                 </Typography>
             </Box>
             <Divider />
