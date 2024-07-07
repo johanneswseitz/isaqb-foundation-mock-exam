@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import './App.css';
 import {AQuestion} from "./AQuestion";
-import {Box, Button, CssBaseline, Divider, ThemeProvider, Typography} from "@mui/material";
+import {Box, Button, CssBaseline, ThemeProvider, Typography} from "@mui/material";
 import Stack from '@mui/material/Stack';
 
 
@@ -30,6 +30,7 @@ export const theme = createTheme({
 
 function App() {
     const [questions, setQuestions] = useState([]);
+    const [showResults, setShowResults] = useState(false);
 
     useEffect(() => {
 
@@ -55,21 +56,37 @@ function App() {
               {questions &&
                   questions.map(function(question:any)  {
                       if (question.type === "P-Frage"){
-                          return <PQuestion hint={question.instruction} question={question.question}
-                                            answers={question.answers}  points={question.points}/>
+                          return <PQuestion
+                              key={question.id}
+                              hint={question.instruction}
+                              question={question.question}
+                              answers={question.answers}
+                              points={question.points}
+                              showResults={showResults}/>
                       } else if (question.type === "A-Frage"){
-                          return <AQuestion question={question.question} answers={question.answers}  points={question.points} />
+                          return <AQuestion
+                              key={question.id}
+                              question={question.question}
+                              answers={question.answers}
+                              points={question.points}
+                              showResults={showResults}/>
                       } else if (question.type === "K-Frage") {
-                          return <KQuestion hint={question.instruction} question={question.question}
-                                            firstChoice={question.first_choice} secondChoice={question.second_choice}
-                                            answers={question.answers} points={question.points}/>
+                          return <KQuestion
+                              key={question.id}
+                              hint={question.instruction}
+                              question={question.question}
+                              firstChoice={question.first_choice}
+                              secondChoice={question.second_choice}
+                              answers={question.answers}
+                              points={question.points}
+                              showResults={showResults}/>
                       } else {
                           return <h3>Unknown question Type! {question.type}</h3>
                       }
               }
               )}
               <Box>
-                  <Button variant="contained">Auswerten</Button>
+                  <Button variant="contained" onClick={()=> setShowResults(true)}>Auswerten</Button>
               </Box>
           </Stack>
           <Box component="section" sx={{ width: "100%", padding: 20, textAlign: "center"}}>
@@ -80,23 +97,5 @@ function App() {
       </React.Fragment>
   );
 }
-
-function convertMarkdownToHtml(markdown:String) {
-    const boldRegex = /(\*\*|__)(.*?)\1/g;
-    let html = markdown.replace(boldRegex, '<strong>$2</strong>');
-    const italicRegex = /(\*|_)(.*?)\1/g;
-    html = html.replace(italicRegex, '<em>$2</em>');
-    const nbspRegex = /\{nbsp\}/;
-    html = html.replace(nbspRegex, "\u00A0");
-    return html;
-}
-
-export const Markdown = ( markdown : any) => {
-    const createMarkup = () => {
-        return { __html: convertMarkdownToHtml(markdown.markdown) };
-    };
-
-    return <div dangerouslySetInnerHTML={createMarkup()} />;
-};
 
 export default App;

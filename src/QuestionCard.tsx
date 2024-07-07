@@ -7,18 +7,18 @@ import {
     Typography
 } from "@mui/material";
 import React from "react";
-import {Markdown, theme} from "./App";
+import {theme} from "./App";
+import {Markdown} from "./Markdown";
 
 interface QuestionCardElements {
     question: String,
     answersElement: JSX.Element,
     points: Number,
-    questionTypeName: String,
-    questionTypeExplanation:String
+    questionTypeName: String
 }
 
 
-export function QuestionCard({question, answersElement, points, questionTypeName, questionTypeExplanation}: QuestionCardElements){
+export function QuestionCard({question, answersElement, points, questionTypeName}: QuestionCardElements){
     return <Card sx={{width: 800}} >
             <Box sx={{p: 4}} bgcolor={theme.palette.primary.light}>
                 <Stack direction="row" justifyContent="space-between" >

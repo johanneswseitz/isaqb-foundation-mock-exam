@@ -1,47 +1,53 @@
-import React, {JSX, useId} from "react";
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import React, {JSX, useId, useState} from "react";
 import {
-    Box,
-    Card,
-    CardActions,
-    CardContent, Checkbox,
+    Checkbox,
     FormControlLabel, FormGroup,
-    Grid,
-    Radio,
-    RadioGroup,
-    Tooltip,
-    Typography
 } from "@mui/material";
 import {QuestionCard} from "./QuestionCard";
-import {Markdown} from "./App";
 
-interface Answer {
-    key: String,
-    answer: String
-}
+import {Markdown} from "./Markdown";
 
 interface PQuestionProperties {
     hint: String,
     question: String,
     answers: Array<any>,
-    points: Number
+    points: Number,
+    showResults: boolean
 }
 
-export function PQuestion({hint, question, answers, points}: PQuestionProperties) : JSX.Element {
+export function PQuestion({hint, question, answers, points, showResults}: PQuestionProperties) : JSX.Element {
     const id = useId();
+    const [selectedChoices, setSelectedChoices] = useState<String[]>([]);
+
+    const handleChoiceChange = (option: String) => {
+        setSelectedChoices((prevSelected: any) => {
+            if (prevSelected.includes(option)) {
+                return prevSelected.filter((i: String) => i !== option);
+            } else {
+                return [...prevSelected, option];
+            }
+        });
+    };
 
     return <QuestionCard question={question}
                          answersElement={
                              <FormGroup>
                                  {answers.map(answer => (
-                                     <FormControlLabel value={ answer.option } control={<Checkbox />}
-                                                       label={<Markdown markdown={answer.option + ") " + answer.text}/>} />
+                                     <FormControlLabel
+                                         key={answer.option}
+                                         value={answer.option}
+                                         control={<Checkbox
+                                             onChange={() => handleChoiceChange(answer.option)}/>}
+                                         checked={selectedChoices.includes(answer.option)}
+                                         className={
+                                             showResults ? (answer.correct ?
+                                                 'correctAnswer'
+                                                 : 'wrongAnswer'): ''
+                                         }
+                                         label={<Markdown
+                                             markdown={answer.option + ") " + answer.text}/>}/>
                                  ))}
-                             </FormGroup> }
+                             </FormGroup>}
                          points={points}
-                         questionTypeName={"P-Frage: " + hint}
-                         questionTypeExplanation="P-Questions (Pick-from-many, Pick Multiple): Select the number of correct answers given in the text from
-the list of possible answers to a question. Select just as many answers as are required in the introductory
-text. You receive 1/n of the total points for each correct answer. For each incorrect cross, 1/n of the points
-are deducted."/>
+                         questionTypeName={"P-Frage: " + hint}/>
 }
