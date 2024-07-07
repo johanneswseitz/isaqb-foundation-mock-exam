@@ -72,6 +72,10 @@ function App() {
                   <Button variant="contained">Auswerten</Button>
               </Box>
           </Stack>
+          <Box component="section" sx={{ width: "100%", padding: 20, textAlign: "center"}}>
+              Application created by <a href="https://www.innoq.com">INNOQ</a>.
+              Questions by <a href="https://github.com/isaqb-org/examination-foundation/">iSAQB</a>.
+          </Box>
           </ThemeProvider>
       </React.Fragment>
   );
