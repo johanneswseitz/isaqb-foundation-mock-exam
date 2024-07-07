@@ -1,8 +1,12 @@
 # iSAQB CPSA-F Mock Exam
 
 
-This project implements an interactive version of the [official iSAQB Foundation Level mock exam](https://www.isaqb.org/mock-exam-for-cpsa-f-certification-published/).
+This project implements an interactive version of the [official iSAQB Foundation Level mock exam](https://github.com/isaqb-org/examination-foundation/).
 
+
+## Take the mock exam
+
+https://johanneswseitz.github.io/isaqb-foundation-mock-exam/
 
 ## Features
 
@@ -14,6 +18,9 @@ This project implements an interactive version of the [official iSAQB Foundation
 
 * Dashboard for trainers running a mock exam session.
 
+## Scraping questions from the iSAQB repo
+
+There's a python script for scraping questions from the mock exam asciidoc located in the `scripts` folder. To scrape the questions, clone the [iSAQB repo](https://github.com/isaqb-org/examination-foundation/) into the `scripts` folder and run `pipenv run python3 create_questions_json_from_mock_exam_asciidoc.py`.
 
 ## Available Scripts
 
@@ -52,8 +59,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
