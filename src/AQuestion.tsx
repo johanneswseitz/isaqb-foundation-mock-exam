@@ -1,6 +1,7 @@
 import React, {JSX, useId} from "react";
 import {FormControlLabel, Radio, RadioGroup} from "@mui/material";
 import {QuestionCard} from "./QuestionCard";
+import {Markdown} from "./App";
 
 
 interface AQuestionProperties {
@@ -22,7 +23,7 @@ export function AQuestion({question, answers, points}: AQuestionProperties) : JS
                              <RadioGroup name={id}>
                                  {answers.map(answer => {
                                      return <FormControlLabel value={answer.option} control={<Radio/>} onChange={scoreQuestion}
-                                                              label={answer.option + ") " + answer.text}/>;
+                                                              label={<Markdown markdown={answer.option + ") " + answer.text}/>}/>;
                                  })}
                              </RadioGroup> }
                          points={points}

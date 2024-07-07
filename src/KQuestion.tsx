@@ -28,7 +28,6 @@ export function KQuestion({hint, question, firstChoice, secondChoice, answers, p
                          points={points}
                          questionTypeName={"K-Frage: " + hint}
                          answersElement={
-                             <TableContainer component={Paper}>
                                  <Table sx={{ minWidth: 400 }} aria-label="simple table">
                                      <TableHead>
                                          <TableRow>
@@ -60,7 +59,6 @@ export function KQuestion({hint, question, firstChoice, secondChoice, answers, p
                                          ))}
                                      </TableBody>
                                  </Table>
-                             </TableContainer>
 }
 questionTypeExplanation='K-Questions (Allocation Questions, Choose Category): For a question, select the correct of the two
 options for each answer choice ("correct" or "incorrect" or "applicable" or "not applicable"). You will receive

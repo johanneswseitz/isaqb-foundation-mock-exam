@@ -13,6 +13,7 @@ import {
     Typography
 } from "@mui/material";
 import {QuestionCard} from "./QuestionCard";
+import {Markdown} from "./App";
 
 interface Answer {
     key: String,
@@ -33,7 +34,8 @@ export function PQuestion({hint, question, answers, points}: PQuestionProperties
                          answersElement={
                              <FormGroup>
                                  {answers.map(answer => (
-                                     <FormControlLabel value={ answer.option } control={<Checkbox />} label={answer.option + ") " + answer.text} />
+                                     <FormControlLabel value={ answer.option } control={<Checkbox />}
+                                                       label={<Markdown markdown={answer.option + ") " + answer.text}/>} />
                                  ))}
                              </FormGroup> }
                          points={points}

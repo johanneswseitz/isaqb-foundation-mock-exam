@@ -18,27 +18,15 @@ interface QuestionCardElements {
 }
 
 
-
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
-
-
 export function QuestionCard({question, answersElement, points, questionTypeName, questionTypeExplanation}: QuestionCardElements){
-    return <Grid item xs={12}>
-        <Card variant="outlined" >
-            <Box sx={{ p: 2 }} bgcolor={theme.palette.secondary.light}>
-                <Stack direction="row" justifyContent="space-between" alignItems="center">
+    return <Card sx={{width: 800}} >
+            <Box sx={{p: 4}} bgcolor={theme.palette.primary.light}>
+                <Stack direction="row" justifyContent="space-between" >
                     <Typography gutterBottom variant="h5" component="div">
                         <Markdown markdown={question}/>
                     </Typography>
                     <Typography gutterBottom variant="h6" component="div">
-                        {points + (points == 1 ? " Punkt" : " Punkte")}
+                        {points + (points == 1 ? "\u00A0Punkt" : "\u00A0Punkte")}
                     </Typography>
                 </Stack>
                 <Typography color="text.secondary" variant="body2">
@@ -50,6 +38,5 @@ export function QuestionCard({question, answersElement, points, questionTypeName
                 {answersElement}
             </Box>
         </Card>
-    </Grid>
 
 }

@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
 import {AQuestion} from "./AQuestion";
-import {CssBaseline, Grid} from "@mui/material";
+import {Box, Button, CssBaseline, Divider, ThemeProvider, Typography} from "@mui/material";
+import Stack from '@mui/material/Stack';
+
+
 import {PQuestion} from "./PQuestion";
 import {KQuestion} from "./KQuestion";
 import {createTheme} from "@mui/material/styles";
 
 export const theme = createTheme({
+    spacing: 3,
     palette: {
         primary: {
             light: '#BFCFD4',
@@ -39,7 +43,14 @@ function App() {
       <React.Fragment>
           <CssBaseline />
 
-          <Grid container component="main" p={10} spacing={2}>
+          <ThemeProvider theme={theme}>
+
+          <Stack direction="column" spacing={10}   justifyContent="center"
+                 alignItems="center"
+          >
+              <Typography variant="h2" component="h1" >
+                  CPSA-F Musterprüfung
+              </Typography>
 
               {questions &&
                   questions.map(function(question:any)  {
@@ -56,8 +67,12 @@ function App() {
                           return <h3>Unknown question Type! {question.type}</h3>
                       }
               }
-                  )}
-          </Grid>
+              )}
+              <Box>
+                  <Button variant="contained">Auswerten</Button>
+              </Box>
+          </Stack>
+          </ThemeProvider>
       </React.Fragment>
   );
 }
@@ -67,6 +82,8 @@ function convertMarkdownToHtml(markdown:String) {
     let html = markdown.replace(boldRegex, '<strong>$2</strong>');
     const italicRegex = /(\*|_)(.*?)\1/g;
     html = html.replace(italicRegex, '<em>$2</em>');
+    const nbspRegex = /\{nbsp\}/;
+    html = html.replace(nbspRegex, "\u00A0");
     return html;
 }
 
