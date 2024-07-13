@@ -73,7 +73,7 @@ def parse_a_or_p_question(question_body):
 
 
 def parse_a_question_answers(question_body):
-    answer_matches = re.findall(r"\| \{([yn])\}\n\| \((\w)\)\n\| ([^\n]+)", question_body)
+    answer_matches = re.findall(r"\| \{([yn])\}\n\| \((\w)\)\n\| ([^|]+)", question_body)
     answers = []
     for match in answer_matches:
         answers.append({

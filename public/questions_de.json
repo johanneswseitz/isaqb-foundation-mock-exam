@@ -9,27 +9,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Komponenten"
+                "text": "Komponenten\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Querschnittskonzepte"
+                "text": "Querschnittskonzepte\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "(interne und externe) Schnittstellen"
+                "text": "(interne und externe) Schnittstellen\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Programmierkonventionen (_coding conventions_)"
+                "text": "Programmierkonventionen (_coding conventions_)\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Hardware-Sizing"
+                "text": "Hardware-Sizing\n"
             }
         ]
     },
@@ -43,37 +43,37 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Durch die einheitliche Verwendung von Konzepten wird die Kopplung zwischen Bausteinen verringert."
+                "text": "Durch die einheitliche Verwendung von Konzepten wird die Kopplung zwischen Bausteinen verringert.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Durch die Definition von geeigneten Konzepten wird die Mustertreue der Architektur sichergestellt."
+                "text": "Durch die Definition von geeigneten Konzepten wird die Mustertreue der Architektur sichergestellt.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Eine einheitliche Ausnahmebehandlung (_Exception Handling_) kann man gut erreichen, indem die"
+                "text": "Eine einheitliche Ausnahmebehandlung (_Exception Handling_) kann man gut erreichen, indem die\nArchitekt:innen mit den Entwickler:innen vor der Implementierung ein geeignetes Konzept vereinbaren.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "F\u00fcr jedes Qualit\u00e4tsziel sollte es ein explizit dokumentiertes Konzept geben."
+                "text": "F\u00fcr jedes Qualit\u00e4tsziel sollte es ein explizit dokumentiertes Konzept geben.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Konzepte sind ein Mittel zur Erh\u00f6hung der Konsistenz."
+                "text": "Konzepte sind ein Mittel zur Erh\u00f6hung der Konsistenz.\n\n"
             },
             {
                 "option": "f",
                 "correct": true,
-                "text": "Ein Konzept kann Einschr\u00e4nkungen f\u00fcr die Umsetzung vieler Bausteine definieren."
+                "text": "Ein Konzept kann Einschr\u00e4nkungen f\u00fcr die Umsetzung vieler Bausteine definieren.\n\n"
             },
             {
                 "option": "g",
                 "correct": true,
-                "text": "Ein Konzept kann durch einen einzigen Baustein umgesetzt werden."
+                "text": "Ein Konzept kann durch einen einzigen Baustein umgesetzt werden.\n"
             }
         ]
     },
@@ -116,42 +116,42 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Flussdiagramme"
+                "text": "Flussdiagramme\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Aktivit\u00e4tsdiagramme"
+                "text": "Aktivit\u00e4tsdiagramme\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Darstellung von Screenflows (Abfolge von Benutzerinteraktionen)"
+                "text": "Darstellung von Screenflows (Abfolge von Benutzerinteraktionen)\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Sequenzdiagramm"
+                "text": "Sequenzdiagramm\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Lineares Venn-Diagramm"
+                "text": "Lineares Venn-Diagramm\n\n"
             },
             {
                 "option": "f",
                 "correct": true,
-                "text": "Nummerierte Liste aufeinanderfolgender Schritte"
+                "text": "Nummerierte Liste aufeinanderfolgender Schritte\n\n"
             },
             {
                 "option": "g",
                 "correct": false,
-                "text": "Tabellarische Schnittstellenbeschreibung"
+                "text": "Tabellarische Schnittstellenbeschreibung\n\n"
             },
             {
                 "option": "h",
                 "correct": false,
-                "text": "Klassendiagramme"
+                "text": "Klassendiagramme\n"
             }
         ]
     },
@@ -165,27 +165,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Im Allgemeinen ist es nicht m\u00f6glich, s\u00e4mtliche Fehler eines Systems zu finden."
+                "text": "Im Allgemeinen ist es nicht m\u00f6glich, s\u00e4mtliche Fehler eines Systems zu finden.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Bei Komponenten mit vielen bekannten vorherigen Fehlern sind die Chancen f\u00fcr zus\u00e4tzliche Fehler hoch."
+                "text": "Bei Komponenten mit vielen bekannten vorherigen Fehlern sind die Chancen f\u00fcr zus\u00e4tzliche Fehler hoch.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Durch ausreichendes Testen kann aufgezeigt werden, dass ein Programm fehlerfrei ist."
+                "text": "Durch ausreichendes Testen kann aufgezeigt werden, dass ein Programm fehlerfrei ist.\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Durch Testen kann nur die Existenz von Fehlern aufgezeigt werden, nicht jedoch ihre Abwesenheit."
+                "text": "Durch Testen kann nur die Existenz von Fehlern aufgezeigt werden, nicht jedoch ihre Abwesenheit.\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Die funktionale Programmierung erlaubt keine automatisierten Tests."
+                "text": "Die funktionale Programmierung erlaubt keine automatisierten Tests.\n"
             }
         ]
     },
@@ -234,22 +234,22 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Verbesserung der Genauigkeit von Mustern in Struktur und Implementierung."
+                "text": "Verbesserung der Genauigkeit von Mustern in Struktur und Implementierung.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Erreichung der Qualit\u00e4tsanforderungen auf nachvollziehbare Weise."
+                "text": "Erreichung der Qualit\u00e4tsanforderungen auf nachvollziehbare Weise.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Erm\u00f6glichung von kosteneffizienten Integrations- und Abnahmetests des Systems."
+                "text": "Erm\u00f6glichung von kosteneffizienten Integrations- und Abnahmetests des Systems.\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Erm\u00f6glichung eines grundlegenden Verst\u00e4ndnisses der Strukturen und Konzepte f\u00fcr das Entwicklungsteam und andere Beteiligte."
+                "text": "Erm\u00f6glichung eines grundlegenden Verst\u00e4ndnisses der Strukturen und Konzepte f\u00fcr das Entwicklungsteam und andere Beteiligte.\n\n"
             }
         ]
     },
@@ -292,27 +292,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Unterst\u00fctzung der Fachexpert:innen dabei, Qualit\u00e4tsanforderungen konkret und explizit zu formulieren."
+                "text": "Unterst\u00fctzung der Fachexpert:innen dabei, Qualit\u00e4tsanforderungen konkret und explizit zu formulieren.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Hilfe bei der Identifizierung von neuen Gesch\u00e4ftsm\u00f6glichkeiten anhand Ihres technischen Know-hows."
+                "text": "Hilfe bei der Identifizierung von neuen Gesch\u00e4ftsm\u00f6glichkeiten anhand Ihres technischen Know-hows.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Ablehnung von Anforderungen, die technische Risiken enthalten."
+                "text": "Ablehnung von Anforderungen, die technische Risiken enthalten.\n\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Umformulierung aller Gesch\u00e4ftsanforderungen, so dass sie f\u00fcr Ihr Entwicklungsteam verst\u00e4ndlich sind."
+                "text": "Umformulierung aller Gesch\u00e4ftsanforderungen, so dass sie f\u00fcr Ihr Entwicklungsteam verst\u00e4ndlich sind.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "\u00dcberpr\u00fcfung der Anforderungen auf technische Machbarkeit."
+                "text": "\u00dcberpr\u00fcfung der Anforderungen auf technische Machbarkeit.\n\n"
             }
         ]
     },
@@ -326,27 +326,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Verhandlung des Wartungsbudgets f\u00fcr Ihr Team"
+                "text": "Verhandlung des Wartungsbudgets f\u00fcr Ihr Team\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Sicherstellung einer aktuellen Dokumentation des ausgelieferten Systems"
+                "text": "Sicherstellung einer aktuellen Dokumentation des ausgelieferten Systems\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Analyse der Auswirkungen von neuen Anforderungen auf das aktuelle System"
+                "text": "Analyse der Auswirkungen von neuen Anforderungen auf das aktuelle System\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Ermunterung der Teammitglieder, neue Programmiersprachen zu lernen"
+                "text": "Ermunterung der Teammitglieder, neue Programmiersprachen zu lernen\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Ihren Vorgesetzten technologische Updates zus\u00e4tzlich zu den Gesch\u00e4ftsanforderungen vorschlagen"
+                "text": "Ihren Vorgesetzten technologische Updates zus\u00e4tzlich zu den Gesch\u00e4ftsanforderungen vorschlagen\n\n"
             }
         ]
     },
@@ -465,27 +465,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Architekt:innen sollten rekursive Strukturen vermeiden und durch explizite Schleifen ersetzen."
+                "text": "Architekt:innen sollten rekursive Strukturen vermeiden und durch explizite Schleifen ersetzen.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Architekt:innen sollten die Annahmen, die zu Entscheidungen f\u00fchren, explizit machen."
+                "text": "Architekt:innen sollten die Annahmen, die zu Entscheidungen f\u00fchren, explizit machen.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Architekt:innen sollten explizit auf Erl\u00e4uterungen (d.h. Kommentare) in nat\u00fcrlicher Sprache f\u00fcr jeden Baustein bestehen."
+                "text": "Architekt:innen sollten explizit auf Erl\u00e4uterungen (d.h. Kommentare) in nat\u00fcrlicher Sprache f\u00fcr jeden Baustein bestehen.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Architekt:innen sollten explizit auf schriftlichen oder zumindest m\u00fcndlichen Begr\u00fcndungen f\u00fcr Aufwandsch\u00e4tzungen der Entwicklung von ihrem Team bestehen."
+                "text": "Architekt:innen sollten explizit auf schriftlichen oder zumindest m\u00fcndlichen Begr\u00fcndungen f\u00fcr Aufwandsch\u00e4tzungen der Entwicklung von ihrem Team bestehen.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Architekt:innen sollten die Voraussetzungen f\u00fcr ihre Entscheidungen explizit darlegen."
+                "text": "Architekt:innen sollten die Voraussetzungen f\u00fcr ihre Entscheidungen explizit darlegen.\n\n"
             }
         ]
     },
@@ -499,27 +499,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Batch-System"
+                "text": "Batch-System\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Interaktives Online-System"
+                "text": "Interaktives Online-System\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Linn\u00e9s-System."
+                "text": "Linn\u00e9s-System.\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Eingebettetes Echtzeitsystem."
+                "text": "Eingebettetes Echtzeitsystem.\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Integrationstestsystem"
+                "text": "Integrationstestsystem\n"
             }
         ]
     },
@@ -533,27 +533,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "User-Interface Driven Design"
+                "text": "User-Interface Driven Design\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Domain-driven Design"
+                "text": "Domain-driven Design\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Sichtenbasierte Architekturentwicklung"
+                "text": "Sichtenbasierte Architekturentwicklung\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Bottom-up Design"
+                "text": "Bottom-up Design\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Mehrheitsentscheid"
+                "text": "Mehrheitsentscheid\n"
             }
         ]
     },
@@ -567,32 +567,32 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Physische Datenbanksicht"
+                "text": "Physische Datenbanksicht\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Kontextsicht"
+                "text": "Kontextsicht\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Bausteinsicht oder Komponentensicht"
+                "text": "Bausteinsicht oder Komponentensicht\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Testbasierte Sicht"
+                "text": "Testbasierte Sicht\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Konfigurationssicht"
+                "text": "Konfigurationssicht\n\n"
             },
             {
                 "option": "f",
                 "correct": true,
-                "text": "Laufzeitsicht"
+                "text": "Laufzeitsicht\n"
             }
         ]
     },
@@ -606,22 +606,22 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "\u00d6ffentliche Schnittstellen."
+                "text": "\u00d6ffentliche Schnittstellen.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Verantwortlichkeiten des Bausteins."
+                "text": "Verantwortlichkeiten des Bausteins.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Interne Struktur des Bausteins."
+                "text": "Interne Struktur des Bausteins.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Spezifikation von Implementierungsdetails."
+                "text": "Spezifikation von Implementierungsdetails.\n\n"
             }
         ]
     },
@@ -635,27 +635,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Die Anforderungsspezifikation f\u00fcr das System ist vollst\u00e4ndig, detailliert und konsistent."
+                "text": "Die Anforderungsspezifikation f\u00fcr das System ist vollst\u00e4ndig, detailliert und konsistent.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Die wichtigsten Qualit\u00e4tsanforderungen an das System sind bekannt."
+                "text": "Die wichtigsten Qualit\u00e4tsanforderungen an das System sind bekannt.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Die organisatorischen Randbedingungen sind bekannt."
+                "text": "Die organisatorischen Randbedingungen sind bekannt.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Die Programmiersprache wurde ausgew\u00e4hlt."
+                "text": "Die Programmiersprache wurde ausgew\u00e4hlt.\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Die Hardware f\u00fcr das Entwicklungsteam ist verf\u00fcgbar."
+                "text": "Die Hardware f\u00fcr das Entwicklungsteam ist verf\u00fcgbar.\n"
             }
         ]
     },
@@ -669,22 +669,22 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Politische."
+                "text": "Politische.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Organisatorische."
+                "text": "Organisatorische.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Technische."
+                "text": "Technische.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Virtuelle."
+                "text": "Virtuelle.\n\n"
             }
         ]
     },
@@ -698,22 +698,22 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Laufzeiteffizienz (Performance)."
+                "text": "Laufzeiteffizienz (Performance).\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Flexibilit\u00e4t bei der Modifizierung oder \u00c4nderung des Systems."
+                "text": "Flexibilit\u00e4t bei der Modifizierung oder \u00c4nderung des Systems.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Flexibilit\u00e4t bei der Laufzeit (Konfigurierbarkeit)."
+                "text": "Flexibilit\u00e4t bei der Laufzeit (Konfigurierbarkeit).\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Nichtabstreitbarkeit."
+                "text": "Nichtabstreitbarkeit.\n"
             }
         ]
     },
@@ -727,22 +727,22 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Verwaltung von globalem Anwendungszustand"
+                "text": "Verwaltung von globalem Anwendungszustand\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Strukturierung von IT-Systemen die Datenstr\u00f6me verarbeiten"
+                "text": "Strukturierung von IT-Systemen die Datenstr\u00f6me verarbeiten\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Entkopplung von Verarbeitungsschritten"
+                "text": "Entkopplung von Verarbeitungsschritten\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Entkopplung von zeitlichen Abh\u00e4ngigkeiten"
+                "text": "Entkopplung von zeitlichen Abh\u00e4ngigkeiten\n"
             }
         ]
     },
@@ -756,17 +756,17 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Gro\u00dfe Bausteine sollen nicht von kleinen Bausteinen abh\u00e4ngen."
+                "text": "Gro\u00dfe Bausteine sollen nicht von kleinen Bausteinen abh\u00e4ngen.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Komponenten sollen in der Lage sein, abh\u00e4ngige Komponenten leichter zu erstellen."
+                "text": "Komponenten sollen in der Lage sein, abh\u00e4ngige Komponenten leichter zu erstellen.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Bausteine sollen nur \u00fcber Abstraktionen voneinander abh\u00e4ngen."
+                "text": "Bausteine sollen nur \u00fcber Abstraktionen voneinander abh\u00e4ngen.\n"
             }
         ]
     },
@@ -815,27 +815,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "DRY verringert die Sicherheit."
+                "text": "DRY verringert die Sicherheit.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Die strenge Einhaltung von DRY k\u00f6nnte zu h\u00f6herer Kopplung f\u00fchren."
+                "text": "Die strenge Einhaltung von DRY k\u00f6nnte zu h\u00f6herer Kopplung f\u00fchren.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Die Komponenten des Systems mit redundantem Code k\u00f6nnen unabh\u00e4ngig voneinander verbessert werden."
+                "text": "Die Komponenten des Systems mit redundantem Code k\u00f6nnen unabh\u00e4ngig voneinander verbessert werden.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Die Einhaltung von DRY f\u00fchrt zu einer Verringerung der Angriffsvektoren in der IT-Sicherheit."
+                "text": "Die Einhaltung von DRY f\u00fchrt zu einer Verringerung der Angriffsvektoren in der IT-Sicherheit.\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Die Anwendung der Schichtenmuster erm\u00f6glicht eine konsistente Anwendung des DRY-Prinzips."
+                "text": "Die Anwendung der Schichtenmuster erm\u00f6glicht eine konsistente Anwendung des DRY-Prinzips.\n"
             }
         ]
     },
@@ -913,22 +913,22 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Pattern-Sicht."
+                "text": "Pattern-Sicht.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Beobachtersicht (Observer-View)."
+                "text": "Beobachtersicht (Observer-View).\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Bausteinsicht (Komponentensicht)."
+                "text": "Bausteinsicht (Komponentensicht).\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "Verteilungssicht."
+                "text": "Verteilungssicht.\n\n\n"
             }
         ]
     },
@@ -942,27 +942,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Der technische Kontext enth\u00e4lt die physischen \u00dcbertragungskan\u00e4le zwischen Ihrem System und der Umgebung."
+                "text": "Der technische Kontext enth\u00e4lt die physischen \u00dcbertragungskan\u00e4le zwischen Ihrem System und der Umgebung.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Der technische Kontext enth\u00e4lt die gesamte Infrastruktur, \u00fcber die die Komponenten Ihres Systems verteilt werden."
+                "text": "Der technische Kontext enth\u00e4lt die gesamte Infrastruktur, \u00fcber die die Komponenten Ihres Systems verteilt werden.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Der technische Kontext sollte die Hardware-Preisliste oder die Preisgestaltung von Cloud-Diensten, die als Infrastruktur f\u00fcr Ihre Architektur verwendet werden, enthalten."
+                "text": "Der technische Kontext sollte die Hardware-Preisliste oder die Preisgestaltung von Cloud-Diensten, die als Infrastruktur f\u00fcr Ihre Architektur verwendet werden, enthalten.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Der technische Kontext enth\u00e4lt Informationen zur gew\u00e4hlten Programmiersprache sowie allen zur Implementierung Ihrer Softwarearchitektur verwendeten Frameworks."
+                "text": "Der technische Kontext enth\u00e4lt Informationen zur gew\u00e4hlten Programmiersprache sowie allen zur Implementierung Ihrer Softwarearchitektur verwendeten Frameworks.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Der technische Kontext enth\u00e4lt gegebenenfalls andere Elemente als der Gesch\u00e4ftskontext (\"business context\")."
+                "text": "Der technische Kontext enth\u00e4lt gegebenenfalls andere Elemente als der Gesch\u00e4ftskontext (\"business context\").\n"
             }
         ]
     },
@@ -976,22 +976,22 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Querschnittskonzepte sollten sich auf die Fachdom\u00e4ne konzentrieren und frei von technischen Informationen sein."
+                "text": "Querschnittskonzepte sollten sich auf die Fachdom\u00e4ne konzentrieren und frei von technischen Informationen sein.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Aspekte oder Konzepte, die in mehreren Teilen Ihrer Softwarearchitektur verwendet werden, sollten auf nicht redundante Weise beschrieben werden."
+                "text": "Aspekte oder Konzepte, die in mehreren Teilen Ihrer Softwarearchitektur verwendet werden, sollten auf nicht redundante Weise beschrieben werden.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Querschnittskonzepte k\u00f6nnen in weiteren Produkten innerhalb der gleichen Organisation  erneut verwendet werden."
+                "text": "Querschnittskonzepte k\u00f6nnen in weiteren Produkten innerhalb der gleichen Organisation  erneut verwendet werden.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Querschnittskonzepte sollten von Spezialist:innen implementiert werden. Daher ist eine separate Dokumentation hilfreich."
+                "text": "Querschnittskonzepte sollten von Spezialist:innen implementiert werden. Daher ist eine separate Dokumentation hilfreich.\n\n"
             }
         ]
     },
@@ -1163,27 +1163,27 @@
             {
                 "option": "a",
                 "correct": false,
-                "text": "Durch Entwickeln von UI-Prototypen."
+                "text": "Durch Entwickeln von UI-Prototypen.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Durch Definieren expliziter Schnittstellen."
+                "text": "Durch Definieren expliziter Schnittstellen.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Durch Erstellen, verfassen oder diskutieren von Szenarien."
+                "text": "Durch Erstellen, verfassen oder diskutieren von Szenarien.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Durch Erstellen automatisierter Tests."
+                "text": "Durch Erstellen automatisierter Tests.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Durch Erstellen eines Qualit\u00e4tsbaums."
+                "text": "Durch Erstellen eines Qualit\u00e4tsbaums.\n"
             }
         ]
     },
@@ -1197,32 +1197,32 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Quantitative Abh\u00e4ngigkeitsanalyse."
+                "text": "Quantitative Abh\u00e4ngigkeitsanalyse.\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "Architekturmodelle."
+                "text": "Architekturmodelle.\n\n"
             },
             {
                 "option": "c",
                 "correct": true,
-                "text": "Qualit\u00e4tsszenarien."
+                "text": "Qualit\u00e4tsszenarien.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Teamgr\u00f6\u00dfe."
+                "text": "Teamgr\u00f6\u00dfe.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Logdateien."
+                "text": "Logdateien.\n\n"
             },
             {
                 "option": "f",
                 "correct": false,
-                "text": "Organigramm."
+                "text": "Organigramm.\n"
             }
         ]
     },
@@ -1236,27 +1236,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Hohe Kopplung der Komponenten."
+                "text": "Hohe Kopplung der Komponenten.\n\n"
             },
             {
                 "option": "b",
                 "correct": false,
-                "text": "Namen \u00f6ffentlicher Methoden geben nicht deren Zweck wieder."
+                "text": "Namen \u00f6ffentlicher Methoden geben nicht deren Zweck wieder.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Fehlende Kommentare."
+                "text": "Fehlende Kommentare.\n\n"
             },
             {
                 "option": "d",
                 "correct": true,
-                "text": "H\u00e4ufung von Fehlern in bestimmten Bausteinen des Systems."
+                "text": "H\u00e4ufung von Fehlern in bestimmten Bausteinen des Systems.\n\n"
             },
             {
                 "option": "e",
                 "correct": false,
-                "text": "Anzahl der Testf\u00e4lle pro Komponente."
+                "text": "Anzahl der Testf\u00e4lle pro Komponente.\n\n"
             }
         ]
     },
@@ -1270,27 +1270,27 @@
             {
                 "option": "a",
                 "correct": true,
-                "text": "Gr\u00f6\u00dfe der Bausteine (z.{nbsp}B. Lines-of-Code)."
+                "text": "Gr\u00f6\u00dfe der Bausteine (z.{nbsp}B. Lines-of-Code).\n\n"
             },
             {
                 "option": "b",
                 "correct": true,
-                "text": "\u00c4nderungsrate des Quellcodes der Komponenten."
+                "text": "\u00c4nderungsrate des Quellcodes der Komponenten.\n\n"
             },
             {
                 "option": "c",
                 "correct": false,
-                "text": "Koh\u00e4sion der Architekturkomponenten."
+                "text": "Koh\u00e4sion der Architekturkomponenten.\n\n"
             },
             {
                 "option": "d",
                 "correct": false,
-                "text": "Sicherheitsstufe einer Komponente."
+                "text": "Sicherheitsstufe einer Komponente.\n\n"
             },
             {
                 "option": "e",
                 "correct": true,
-                "text": "Anzahl der Personen, die zu einer bestimmten Komponente beigetragen haben."
+                "text": "Anzahl der Personen, die zu einer bestimmten Komponente beigetragen haben.\n\n"
             }
         ]
     }
