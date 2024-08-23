@@ -11,13 +11,15 @@ import {
 
 
 interface KQuestionParameters {
+    questionId: string,
     hint: string,
     question: string,
     firstChoice: string,
     secondChoice: string,
     answers: any[],
     totalPoints: number,
-    showResults: boolean
+    showResults: boolean,
+    onPointsChange: Function
 }
 
 interface SelectedCheckbox {
@@ -25,8 +27,8 @@ interface SelectedCheckbox {
     checkbox: string
 }
 
-export function KQuestion({hint, question, firstChoice, secondChoice,
-                              answers, totalPoints, showResults}: KQuestionParameters) {
+export function KQuestion({questionId, hint, question,firstChoice, secondChoice,
+                              answers, totalPoints,showResults, onPointsChange}: KQuestionParameters) {
 
     const [selectedChoices, setSelectedChoices] = useState<SelectedCheckbox[]>([]);
     const [actualPoints, setActualPoints] = useState<number>(0);
@@ -49,15 +51,19 @@ export function KQuestion({hint, question, firstChoice, secondChoice,
         setActualPoints(calculatePoints(selectedChoices));
     }, [selectedChoices]);
 
+    useEffect(() => {
+        onPointsChange(questionId, actualPoints);
+    }, [actualPoints]);
+
     const calculatePoints = (selectedChoices: SelectedCheckbox[]) => {
         let points = selectedChoices.map(selectedChoice => answers
             .filter(answer => answer.option === selectedChoice.option)
             .map((answer: any) => selectedChoice.checkbox === "first" ? answer.first_correct : answer.second_correct)
             .map((isCorrect: boolean) => isCorrect ?
-                (1/answers.length) * totalPoints
-                : -(1/answers.length) * totalPoints))
+                (1 / answers.length) * totalPoints
+                : -(1 / answers.length) * totalPoints))
             .flat()
-            .reduce((a:any ,b:any)=> a + b, 0);
+            .reduce((a: any, b: any) => a + b, 0);
         return Math.max(0, points);
     }
 
