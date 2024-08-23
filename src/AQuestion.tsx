@@ -8,11 +8,11 @@ import {Markdown} from "./Markdown";
 interface AQuestionProperties {
     question: String,
     answers: Array<any>,
-    points: Number,
+    totalPoints: Number,
     showResults: boolean
 }
 
-export function AQuestion({question, answers, points, showResults}: AQuestionProperties) : JSX.Element {
+export function AQuestion({question, answers, totalPoints, showResults}: AQuestionProperties) : JSX.Element {
     const id = useId()
 
     return <QuestionCard question={question}
@@ -20,6 +20,7 @@ export function AQuestion({question, answers, points, showResults}: AQuestionPro
                              <RadioGroup name={id}>
                                  {answers.map(answer => {
                                      return <FormControlLabel
+                                         style={{marginLeft:0, marginRight:0}}
                                          key={answer.option}
                                          value={answer.option}
                                          control={<Radio/>}
@@ -31,6 +32,8 @@ export function AQuestion({question, answers, points, showResults}: AQuestionPro
                                          label={<Markdown markdown={answer.option + ") " + answer.text}/>}/>;
                                  })}
                              </RadioGroup> }
-                         points={points}
+                         totalPoints={totalPoints}
+                         actualPoints={0}
+                         showResults={showResults}
                          questionTypeName={"A-Frage: Wählen Sie eine Option"}/>
 }

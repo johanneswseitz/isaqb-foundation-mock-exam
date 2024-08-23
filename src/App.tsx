@@ -29,13 +29,12 @@ export const theme = createTheme({
 });
 
 function App() {
-    const [questions, setQuestions] = useState([]);
+    const [questions, setQuestions] = useState<any[]>([]);
     const [showResults, setShowResults] = useState(false);
 
     useEffect(() => {
 
         axios.get("./questions_de.json").then((res) => {
-
             setQuestions(res.data);
         });
     }, []);
@@ -61,14 +60,14 @@ function App() {
                               hint={question.instruction}
                               question={question.question}
                               answers={question.answers}
-                              points={question.points}
+                              totalPoints={question.points}
                               showResults={showResults}/>
                       } else if (question.type === "A-Frage"){
                           return <AQuestion
                               key={question.id}
                               question={question.question}
                               answers={question.answers}
-                              points={question.points}
+                              totalPoints={question.points}
                               showResults={showResults}/>
                       } else if (question.type === "K-Frage") {
                           return <KQuestion
@@ -78,7 +77,7 @@ function App() {
                               firstChoice={question.first_choice}
                               secondChoice={question.second_choice}
                               answers={question.answers}
-                              points={question.points}
+                              totalPoints={question.points}
                               showResults={showResults}/>
                       } else {
                           return <h3>Unknown question Type! {question.type}</h3>

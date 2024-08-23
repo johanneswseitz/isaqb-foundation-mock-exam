@@ -15,5 +15,5 @@ export const Markdown = (markdown: any) => {
         return {__html: convertMarkdownToHtml(markdown.markdown)};
     };
 
-    return <div dangerouslySetInnerHTML={createMarkup()}/>;
+    return <span dangerouslySetInnerHTML={createMarkup()}/>;
 };

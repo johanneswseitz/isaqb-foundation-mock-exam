@@ -3,7 +3,6 @@ import re
 
 import sys
 from pathlib import Path
-from pprint import pprint
 
 TABLE_PATTERN = re.compile(r'(?s).*?\|===\n(.*?\|===)')
 
