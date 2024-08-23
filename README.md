@@ -61,5 +61,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 TODO: 
-* Margin-right von den FormControlLabels reduzieren.
 * Typing überprüfen
+* Rundungsfehler?
+* what happened to question 1?

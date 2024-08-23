@@ -31,13 +31,27 @@ export const theme = createTheme({
 function App() {
     const [questions, setQuestions] = useState<any[]>([]);
     const [showResults, setShowResults] = useState(false);
-
+    const [points, setPoints] = useState(new Map<string, number>())
+    const [totalPoints, setTotalPoints] = useState(0)
     useEffect(() => {
-
         axios.get("./questions_de.json").then((res) => {
             setQuestions(res.data);
         });
     }, []);
+
+    useEffect(() => {
+        // Durchiterieren durch points und die total points errechnen
+        let sum = Array.from(points.values()).reduce((a, b) => a+b, 0);
+        setTotalPoints(sum);
+    }, [points]);
+
+    function onPointsChange(questionId:string, points: number) {
+        setPoints((m) => {
+            const newMap = new Map(m);
+            newMap.set(questionId, points);
+            return newMap;
+        });
+    }
 
     return (
       <React.Fragment>
@@ -57,11 +71,13 @@ function App() {
                       if (question.type === "P-Frage"){
                           return <PQuestion
                               key={question.id}
+                              questionId={question.id}
                               hint={question.instruction}
                               question={question.question}
                               answers={question.answers}
                               totalPoints={question.points}
-                              showResults={showResults}/>
+                              showResults={showResults}
+                              onPointsChange={onPointsChange}/>
                       } else if (question.type === "A-Frage"){
                           return <AQuestion
                               key={question.id}
@@ -86,6 +102,9 @@ function App() {
               )}
               <Box>
                   <Button variant="contained" onClick={()=> setShowResults(true)}>Auswerten</Button>
+                  Gesamtpunktzahl: {
+                      showResults ? totalPoints : "?"
+                  } von {questions.map((question) => Number(question.points)).reduce((a:number, b:number) => a +b, 0)}
               </Box>
           </Stack>
           <Box component="section" sx={{ width: "100%", padding: 20, textAlign: "center"}}>

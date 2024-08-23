@@ -11,11 +11,11 @@ import {
 
 
 interface KQuestionParameters {
-    hint: String,
-    question: String,
-    firstChoice: String,
-    secondChoice: String,
-    answers: Array<any>,
+    hint: string,
+    question: string,
+    firstChoice: string,
+    secondChoice: string,
+    answers: any[],
     totalPoints: number,
     showResults: boolean
 }
@@ -25,15 +25,8 @@ interface SelectedCheckbox {
     checkbox: string
 }
 
-export function KQuestion({
-                              hint,
-                              question,
-                              firstChoice,
-                              secondChoice,
-                              answers,
-                              totalPoints,
-                              showResults
-                          }: KQuestionParameters) {
+export function KQuestion({hint, question, firstChoice, secondChoice,
+                              answers, totalPoints, showResults}: KQuestionParameters) {
 
     const [selectedChoices, setSelectedChoices] = useState<SelectedCheckbox[]>([]);
     const [actualPoints, setActualPoints] = useState<number>(0);
@@ -53,17 +46,18 @@ export function KQuestion({
     }
 
     useEffect(() => {
-        console.log(selectedChoices);
         setActualPoints(calculatePoints(selectedChoices));
     }, [selectedChoices]);
 
     const calculatePoints = (selectedChoices: SelectedCheckbox[]) => {
-        console.log(selectedChoices)
         let points = selectedChoices.map(selectedChoice => answers
             .filter(answer => answer.option === selectedChoice.option)
             .map((answer: any) => selectedChoice.checkbox === "first" ? answer.first_correct : answer.second_correct)
-            .map((isCorrect: boolean) => isCorrect ? (1/answers.length) * totalPoints : -(1/answers.length) * totalPoints)).map(array => array.at(0))
-            .reduce((a:any ,b:any)=> a+b, 0);
+            .map((isCorrect: boolean) => isCorrect ?
+                (1/answers.length) * totalPoints
+                : -(1/answers.length) * totalPoints))
+            .flat()
+            .reduce((a:any ,b:any)=> a + b, 0);
         return Math.max(0, points);
     }
 

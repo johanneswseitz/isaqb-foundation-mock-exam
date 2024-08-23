@@ -8,22 +8,32 @@ import {QuestionCard} from "./QuestionCard";
 import {Markdown} from "./Markdown";
 
 interface PQuestionProperties {
-    hint: String,
-    question: String,
-    answers: Array<any>,
+    questionId: string,
+    hint: string,
+    question: string,
+    answers: any[],
     totalPoints: number,
-    showResults: boolean
+    showResults: boolean,
+    onPointsChange: Function
 }
 
-export function PQuestion({hint, question, answers, totalPoints, showResults}: PQuestionProperties) : JSX.Element {
+export function PQuestion({
+                              questionId,
+                              hint,
+                              question,
+                              answers,
+                              totalPoints,
+                              showResults,
+                              onPointsChange,
+                          }: PQuestionProperties): JSX.Element {
     const id = useId();
-    const [selectedChoices, setSelectedChoices] = useState<String[]>([]);
-    const [actualPoints, setActualPoints] = useState<Number>(0);
+    const [selectedChoices, setSelectedChoices] = useState<string[]>([]);
+    const [actualPoints, setActualPoints] = useState<number>(0);
 
-    const handleChoiceChange = (option: String) => {
+    const handleChoiceChange = (option: string) => {
         setSelectedChoices((prevSelected: any) => {
             if (prevSelected.includes(option)) {
-                return prevSelected.filter((i: String) => i !== option);
+                return prevSelected.filter((i: string) => i !== option);
             } else {
                 return [...prevSelected, option];
             }
@@ -32,20 +42,24 @@ export function PQuestion({hint, question, answers, totalPoints, showResults}: P
 
     useEffect(() => {
         let number = calculatePoints(selectedChoices);
-        setActualPoints(number);
+        setActualPoints(() => number);
     }, [selectedChoices]);
+
+    useEffect(() => {
+        onPointsChange(questionId, actualPoints);
+    }, [actualPoints]);
 
     const calculatePoints = (selectedChoices: any) => {
         const correctAnswers = answers.filter((answer: any) => answer.correct);
         if (selectedChoices.length > correctAnswers.length) return 0;
 
-        let correctOptions: String[] = correctAnswers.map((answer) => answer.option);
+        let correctOptions: string[] = correctAnswers.map((answer) => answer.option);
 
-        let correctlySelected = selectedChoices.filter((choice:String) => correctOptions.includes(choice));
-        let wronglySelected = selectedChoices.filter((choice:String) => !correctOptions.includes(choice));
+        let correctlySelected = selectedChoices.filter((choice: string) => correctOptions.includes(choice));
+        let wronglySelected = selectedChoices.filter((choice: string) => !correctOptions.includes(choice));
 
         let bonus = correctlySelected.length * (1 / correctAnswers.length * totalPoints);
-        let malus = wronglySelected.length* (1 / correctAnswers.length * totalPoints);
+        let malus = wronglySelected.length * (1 / correctAnswers.length * totalPoints);
 
         let finalPoints = bonus - malus;
         return (finalPoints < 0) ? 0 : finalPoints;
@@ -56,7 +70,7 @@ export function PQuestion({hint, question, answers, totalPoints, showResults}: P
                              <FormGroup>
                                  {answers.map(answer => (
                                      <FormControlLabel
-                                         style={{marginLeft:0, marginRight:0}}
+                                         style={{marginLeft: 0, marginRight: 0}}
                                          key={answer.option}
                                          value={answer.option}
                                          control={<Checkbox
@@ -65,7 +79,7 @@ export function PQuestion({hint, question, answers, totalPoints, showResults}: P
                                          className={
                                              showResults ? (answer.correct ?
                                                  'correctAnswer'
-                                                 : 'wrongAnswer'): ''
+                                                 : 'wrongAnswer') : ''
                                          }
                                          label={<Markdown
                                              markdown={answer.option + ") " + answer.text}/>}/>
