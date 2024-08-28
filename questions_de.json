@@ -1292,6 +1292,11 @@
         "question": "Sie versuchen, ihre Architektur quantitativ zu untersuchen.\nWelche der folgenden Gr\u00f6\u00dfen k\u00f6nnen Sie f\u00fcr Ihre Softwarearchitektur zuverl\u00e4ssig messen?\nW\u00e4hlen Sie die DREI am besten passenden Antworten aus.",
         "answers": [
             {
+                "option": "a",
+                "correct": true,
+                "text": "Gr\u00f6\u00dfe der Bausteine (z.{nbsp}B. Lines-of-Code).\n\n"
+            },
+            {
                 "option": "b",
                 "correct": true,
                 "text": "\u00c4nderungsrate des Quellcodes der Komponenten.\n\n"
