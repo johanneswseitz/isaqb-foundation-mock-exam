@@ -1,5 +1,29 @@
 [
     {
+        "id": "question-01.adoc",
+        "type": "A-Frage",
+        "instruction": "Bitte kreuzen Sie die richtige Antwort an.",
+        "points": "1",
+        "question": "Wie viele Definitionen des Begriffes \"Softwarearchitektur\" gibt es?",
+        "answers": [
+            {
+                "option": "a",
+                "correct": false,
+                "text": "Genau eine f\u00fcr alle Arten von Systemen.\n\n"
+            },
+            {
+                "option": "b",
+                "correct": false,
+                "text": "Eine f\u00fcr jede Art von Softwaresystem (z.{nbsp}B. \"eingebettet\", \"Echtzeit\", \"Entscheidungsunterst\u00fctzung\", \"Web\", \"Batch\", \u2026)\n\n"
+            },
+            {
+                "option": "c",
+                "correct": true,
+                "text": "Ein Dutzend oder mehr unterschiedliche Definitionen.\n"
+            }
+        ]
+    },
+    {
         "id": "question-02.adoc",
         "type": "P-Frage",
         "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
@@ -1263,7 +1287,7 @@
     {
         "id": "question-39.adoc",
         "type": "P-Frage",
-        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die *drei*** Antworten aus, die am besten passen.",
+        "instruction": "W\u00e4hlen Sie aus den folgenden f\u00fcnf Antworten die **drei** Antworten aus, die am besten passen.",
         "points": "1",
         "question": "Sie versuchen, ihre Architektur quantitativ zu untersuchen.\nWelche der folgenden Gr\u00f6\u00dfen k\u00f6nnen Sie f\u00fcr Ihre Softwarearchitektur zuverl\u00e4ssig messen?\nW\u00e4hlen Sie die DREI am besten passenden Antworten aus.",
         "answers": [

@@ -8,7 +8,7 @@ TABLE_PATTERN = re.compile(r'(?s).*?\|===\n(.*?\|===)')
 
 
 def convert_asciidoc_to_json():
-    mock_exam_questions_path = Path("examination-foundation-main/raw/mock_exam/docs/questions")
+    mock_exam_questions_path = Path("examination-foundation/raw/mock_exam/docs/questions")
     if not mock_exam_questions_path.is_dir():
         print("Could not find mock exam questions, make sure the repo is placed at Path {}".format(
             mock_exam_questions_path))
@@ -72,7 +72,7 @@ def parse_a_or_p_question(question_body):
 
 
 def parse_a_question_answers(question_body):
-    answer_matches = re.findall(r"\| \{([yn])\}\n\| \((\w)\)\n\| ([^|]+)", question_body)
+    answer_matches = re.findall(r"\| \{([yn])\}\n\| \((\w)\)\n[a]*\| ([^|]+)", question_body)
     answers = []
     for match in answer_matches:
         answers.append({
