@@ -73,7 +73,7 @@ export function KQuestion({questionId, hint, question,firstChoice, secondChoice,
                          showResults={showResults}
                          questionTypeName={"K-Frage: " + hint}
                          answersElement={
-                             <Table sx={{minWidth: 400}} aria-label="simple table">
+                             <Table aria-label="simple table">
                                  <TableHead>
                                      <TableRow>
                                          <TableCell style={{fontSize: "16px"}}>Frage</TableCell>
@@ -91,7 +91,7 @@ export function KQuestion({questionId, hint, question,firstChoice, secondChoice,
                                              <TableCell component="th" scope="row" style={{fontSize: "16px"}}>
                                                  {answer.option})
                                              </TableCell>
-                                             <TableCell style={{fontSize: "16px"}}>
+                                             <TableCell style={{fontSize: "16px"}} sx={{hyphens: 'auto', wordWrap: 'break-word', whiteSpace: 'pre-wrap', wordBreak:'break-word'}}>
                                                  {answer.text}
                                              </TableCell>
                                              <TableCell className={

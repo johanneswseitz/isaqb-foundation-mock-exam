@@ -66,8 +66,13 @@ function App() {
 
           <ThemeProvider theme={theme}>
 
-          <Stack direction="column" spacing={10}   justifyContent="center"
+          <Stack direction="column" spacing={10} justifyContent="center"
                  alignItems="center"
+                 sx={{
+                     margin: '10px',
+                     maxWidth: '100%',
+                     overflow: 'hidden'
+                 }}
           >
               <Typography variant="h2" component="h1" >
                   CPSA-F Musterprüfung

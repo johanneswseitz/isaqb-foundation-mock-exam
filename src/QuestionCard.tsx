@@ -21,10 +21,10 @@ interface QuestionCardElements {
 
 
 export function QuestionCard({question, answersElement, totalPoints, questionTypeName, actualPoints,showResults}: QuestionCardElements){
-    return <Card sx={{width: 800}} >
-            <Box sx={{p: 4}} bgcolor={theme.palette.primary.light}>
+    return <Card sx={{maxwidth: 800}} >
+            <Box sx={{p: 4, flexShrink: 0.7}} bgcolor={theme.palette.primary.light}>
                 <Stack direction="row" justifyContent="space-between" >
-                    <Typography gutterBottom variant="h5" component="div" mr={10}>
+                    <Typography gutterBottom variant="h5" component="div" mr={10} sx={{hyphens: 'auto', wordWrap: 'break-word', whiteSpace: 'pre-wrap', wordBreak:'break-word'}}>
                         <Markdown markdown={question}/>
                     </Typography>
                     <Typography gutterBottom variant="h6" component="div">
@@ -39,7 +39,7 @@ export function QuestionCard({question, answersElement, totalPoints, questionTyp
                 </Typography>
             </Box>
             <Divider />
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: 2, flexShrink: 0.7, overflow: 'hidden'}}>
                 {answersElement}
             </Box>
         </Card>
