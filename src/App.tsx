@@ -38,7 +38,7 @@ function App() {
     const [isPassed, setIsPassed] = useState(false);
 
     useEffect(() => {
-        axios.get("./questions_de.json").then((res) => {
+        axios.get("./questions_en.json").then((res) => {
             setQuestions(res.data);
             let reduce = res.data.map((question: any) => Number(question.points)).reduce((a: number, b: number) => a + b, 0);
             console.log(reduce)
@@ -80,7 +80,7 @@ function App() {
 
               {questions &&
                   questions.map(function(question:any)  {
-                      if (question.type === "P-Frage"){
+                      if (question.type === "P-Frage" || question.type === "P-Question") {
                           return <PQuestion
                               key={question.id}
                               questionId={question.id}
@@ -90,16 +90,17 @@ function App() {
                               totalPoints={question.points}
                               showResults={showResults}
                               onPointsChange={onPointsChange}/>
-                      } else if (question.type === "A-Frage"){
+                      } else if (question.type === "A-Frage" || question.type === "A-Question") {
                           return <AQuestion
                               key={question.id}
                               questionId={question.id}
+                              hint={question.instruction}
                               question={question.question}
                               answers={question.answers}
                               totalPoints={question.points}
                               showResults={showResults}
                               onPointsChange={onPointsChange}/>
-                      } else if (question.type === "K-Frage") {
+                      } else if (question.type === "K-Frage" || question.type === "K-Question") {
                           return <KQuestion
                               key={question.id}
                               questionId={question.id}

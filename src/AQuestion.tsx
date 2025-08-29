@@ -7,6 +7,7 @@ import {Markdown} from "./Markdown";
 
 interface AQuestionProperties {
     questionId: string,
+    hint: string,
     question: string,
     answers: any[],
     totalPoints: number,
@@ -14,7 +15,7 @@ interface AQuestionProperties {
     onPointsChange: Function,
 }
 
-export function AQuestion({questionId, question, answers,totalPoints,
+export function AQuestion({questionId, hint, question, answers,totalPoints,
                               showResults, onPointsChange,}: AQuestionProperties): JSX.Element {
     const id = useId()
     const [selectedChoice, setSelectedChoice] = useState<string[]>([]);
@@ -64,5 +65,5 @@ export function AQuestion({questionId, question, answers,totalPoints,
                          totalPoints={totalPoints}
                          actualPoints={actualPoints}
                          showResults={showResults}
-                         questionTypeName={"A-Frage: Wählen Sie eine Option"}/>
+                         questionTypeName={hint}/>
 }

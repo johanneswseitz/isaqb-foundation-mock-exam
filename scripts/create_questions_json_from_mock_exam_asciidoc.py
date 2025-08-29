@@ -14,6 +14,7 @@ def convert_asciidoc_to_json():
             mock_exam_questions_path))
         sys.exit(1)
     questions_de = []
+    questions_en = []
     for file in sorted(mock_exam_questions_path.glob("question-*.adoc")):
         question_text = file.read_text("utf-8")
         german_version = get_document_parth_tagged_with_language(question_text, "DE")
@@ -29,8 +30,21 @@ def convert_asciidoc_to_json():
             raise AttributeError("Unknown question type: " + question_type.get("type"))
         question = question | question_and_answers
         questions_de.append(question)
-        # TODO do the same for the english version
-    print(json.dumps(questions_de, indent=4))
+        english_version = get_document_parth_tagged_with_language(question_text, "EN")
+        question_type, question_body = parse_question_type_en(english_version)
+        question = {"id": file.name} | question_type
+        if question_type.get("type") == "A-Question":
+            question_and_answers = parse_a_or_p_question(question_body)
+        elif question_type.get("type") == "K-Question":
+            question_and_answers = parse_k_question(question_body)
+        elif question_type.get("type") == "P-Question":
+            question_and_answers = parse_a_or_p_question(question_body)
+        else:
+            raise AttributeError("Unknown question type: " + question_type.get("type"))
+        question = question | question_and_answers
+        questions_en.append(question)
+
+    print(json.dumps(questions_en, indent=4))
 
 
 def get_document_parth_tagged_with_language(asciidoc_content, language_code):
@@ -47,6 +61,27 @@ def parse_question_type_de(question_text):
     p_question_type_pattern = re.compile(r'\|\s*(P-Frage):\n\| (.*)', re.MULTILINE)
     k_question_type_pattern = re.compile(r'\|\s*(K-Frage):\n\| (.*)', re.MULTILINE)
     points_pattern = re.compile(r'\|\s*(\d+)\s*Punkt', re.MULTILINE)
+
+    type_and_instruction_match = a_question_type_pattern.search(question_text) or p_question_type_pattern.search(
+        question_text) or k_question_type_pattern.search(question_text)
+    points_match = points_pattern.search(question_text)
+
+    end_of_header_pattern = TABLE_PATTERN
+    match = end_of_header_pattern.search(question_text)
+    footer = question_text[match.end():]
+
+    return ({
+                'type': type_and_instruction_match.group(1),
+                'instruction': type_and_instruction_match.group(2),
+                'points': points_match.group(1)
+            }, footer)
+
+
+def parse_question_type_en(question_text):
+    a_question_type_pattern = re.compile(r'\|\s*(A-Question):\n\| (.*)', re.MULTILINE)
+    p_question_type_pattern = re.compile(r'\|\s*(P-Question):\n\| (.*)', re.MULTILINE)
+    k_question_type_pattern = re.compile(r'\|\s*(K-Question):\n\| (.*)', re.MULTILINE)
+    points_pattern = re.compile(r'\|\s*(\d+)\s*(P|p)oint', re.MULTILINE)
 
     type_and_instruction_match = a_question_type_pattern.search(question_text) or p_question_type_pattern.search(
         question_text) or k_question_type_pattern.search(question_text)
