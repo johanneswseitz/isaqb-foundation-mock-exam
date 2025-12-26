@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/johanneswseitz/isaqb-foundation-mock-exam/static/css/main.06457a31.css",
+    "main.js": "/johanneswseitz/isaqb-foundation-mock-exam/static/js/main.8061fc81.js",
+    "static/js/488.2566ee6d.chunk.js": "/johanneswseitz/isaqb-foundation-mock-exam/static/js/488.2566ee6d.chunk.js",
+    "index.html": "/johanneswseitz/isaqb-foundation-mock-exam/index.html",
+    "main.06457a31.css.map": "/johanneswseitz/isaqb-foundation-mock-exam/static/css/main.06457a31.css.map",
+    "main.8061fc81.js.map": "/johanneswseitz/isaqb-foundation-mock-exam/static/js/main.8061fc81.js.map",
+    "488.2566ee6d.chunk.js.map": "/johanneswseitz/isaqb-foundation-mock-exam/static/js/488.2566ee6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06457a31.css",
+    "static/js/main.8061fc81.js"
+  ]
+}

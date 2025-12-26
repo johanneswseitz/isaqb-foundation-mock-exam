@@ -1,0 +1,11 @@
+{
+    "title": "iSAQB CPSA-F Mock Exam",
+    "point": "Point",
+    "points": "Points",
+    "question": "Question",
+    "description": "Description",
+    "score": "Score",
+    "pass": "Pass",
+    "fail": "Fail",
+    "evaluate": "Hand in"
+}

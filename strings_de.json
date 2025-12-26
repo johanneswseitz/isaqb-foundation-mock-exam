@@ -1,0 +1,11 @@
+{
+    "title": "iSAQB CPSA-F Musterprüfung",
+    "point": "Punkt",
+    "points": "Punkte",
+    "question": "Frage",
+    "description": "Beschreibung",
+    "score": "Gesamtpunkte",
+    "pass": "Bestanden",
+    "fail": "Nicht bestanden",
+    "evaluate": "Auswerten"
+}
